@@ -267,6 +267,7 @@
 
 		private void Pause()
 		{
+			Cursor.visible = true;
 			if (!IsPlaying) return;
 
 			SetTimeScale(0);
@@ -276,6 +277,7 @@
 
 		private void Resume()
 		{
+			Cursor.visible = false;
 			if (IsPlaying) return;
 
 			SetTimeScale(1);

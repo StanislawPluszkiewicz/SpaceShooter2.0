@@ -10,6 +10,7 @@ Evénements : Entre chaque niveau, utilisez un magasin pour réparer et améliorer 
 Capacité : Boucliers Ioniques ou Laser. Il existe 2 types de boucliers Ionique (Bleu) et Laser (Rouge). 
 	   Ces boucliers permettent de protéger des tirs ioniques (bleus) et laser (rouges).
 	   Vous pouvez changer de type de bouclier au magasin.
+Il est conseillé de jouer en 1920*1080.
 
 ###################
 #    REMARQUES    #

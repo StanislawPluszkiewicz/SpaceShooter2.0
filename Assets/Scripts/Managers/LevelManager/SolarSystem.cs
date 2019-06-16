@@ -12,7 +12,8 @@
 
 		void Awake()
 		{
-			sphereCount = 5;
+			sphereCount = 2;
+			Destroy(this, 5);
 		}
 		// Start is called before the first frame update
 		void Start()
