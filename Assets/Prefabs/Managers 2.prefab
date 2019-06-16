@@ -53,6 +53,10 @@ MonoBehaviour:
   m_Hud: {fileID: 0}
   m_PanelCredits: {fileID: 0}
   m_PanelShop: {fileID: 0}
+  menuMusic: {fileID: 0}
+  level1: {fileID: 0}
+  level2: {fileID: 0}
+  level3: {fileID: 0}
 --- !u!1 &6688137246784415429
 GameObject:
   m_ObjectHideFlags: 0

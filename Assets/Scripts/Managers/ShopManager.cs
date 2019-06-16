@@ -80,7 +80,6 @@
 
 			//EventManager.Instance.Raise(new GameShopEvent()); // c:
 			MenuManager.Instance.GameShop(null); // :c
-			Instantiate(new Camera());
 		}
 
         #endregion

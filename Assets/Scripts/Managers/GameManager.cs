@@ -187,13 +187,11 @@
 		public void Lose()
 		{
 			Cursor.visible = true;
-			print("you lost");
             Over();
 		}
 
 		public void EndLevel()
 		{
-			print("ending level:" + LevelManager.Instance.m_CurrentLevelIndex);
 			Cursor.visible = true;
 			LevelManager.Instance.m_Levels[LevelManager.Instance.m_CurrentLevelIndex].isActive = false;
 			Destroy(m_DynamicParent);
