@@ -7,5 +7,13 @@
     public class Shield : MonoBehaviour
     {
         public ShieldSettings m_Settings;
+
+
+        public void OnCollisionEnter(Collision collision)
+        {
+            
+        }
+
+
     }
 }

@@ -67,6 +67,19 @@
 				// GameManager.Instance.m_Player.TakeDamage(this.m_Settings.m_Damage);
 				DestroyImmediate(gameObject);
 			}
+            if(other.gameObject.layer == LayerMask.NameToLayer("shield"))
+            {
+                GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer--;
+
+                if(GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer == 0)
+                {
+                    GameManager.Instance.m_Player.HideShield();
+                }
+                else
+                {
+                    GameManager.Instance.m_Player.ShowShield();
+                }
+            }
 		}
 		
 		void CollislionHit(Vector3 position, Quaternion rotation){
