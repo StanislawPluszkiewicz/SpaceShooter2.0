@@ -178,6 +178,12 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &622298612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1030578529341983584, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
+    type: 3}
+  m_PrefabInstance: {fileID: 896702962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &731737719 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3925038292176222102, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
@@ -806,6 +812,10 @@ PrefabInstance:
       propertyPath: m_PanelCredits
       value: 
       objectReference: {fileID: 1764139768}
+    - target: {fileID: 203915320, guid: 2eb004c075b04d3418b146d699e82a5a, type: 3}
+      propertyPath: m_PanelShop
+      value: 
+      objectReference: {fileID: 622298612}
     - target: {fileID: 6253729600601138342, guid: 2eb004c075b04d3418b146d699e82a5a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -956,10 +966,5 @@ PrefabInstance:
       propertyPath: m_WeaponRightPrice
       value: 
       objectReference: {fileID: 941659209}
-    - target: {fileID: 6902986063651492161, guid: 2eb004c075b04d3418b146d699e82a5a,
-        type: 3}
-      propertyPath: m_ShipDistanceToGround
-      value: 1.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb004c075b04d3418b146d699e82a5a, type: 3}

@@ -77,7 +77,12 @@
             m_WeaponLeftPrice.text = m_WeaponLeftPrice.ToString();
             m_WeaponCenterPrice.text = m_WeaponCenterPrice.ToString();
             m_WeaponRightPrice.text = m_WeaponRightPrice.ToString();
-        }
+
+			//EventManager.Instance.Raise(new GameShopEvent()); // c:
+			MenuManager.Instance.GameShop(null); // :c
+			Instantiate(new Camera());
+		}
+
         #endregion
     }
 }
