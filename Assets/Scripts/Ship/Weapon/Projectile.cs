@@ -13,9 +13,10 @@
 		public float m_Acceleration;
 		public float m_MaxSpeed;
 		private AudioSource source;
+        public enum TypeColor { Ion, Laser }
+        public TypeColor m_TypeColor;
 
-
-		protected ProjectileType m_Type;
+        protected ProjectileType m_Type;
 		public GameObject hitPrefab;
 
 		public void Awake()
@@ -44,43 +45,49 @@
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
 			Vector3 pos = contact.point;
 
-			if (gameObject.layer == LayerMask.NameToLayer("foeProjectile") && other.gameObject.layer == LayerMask.NameToLayer("player"))
-			{
-				CollislionHit(pos, rot);
-				GameManager.Instance.m_Player.TakeDamage(this.m_Settings.m_Damage);
-				Destroy(gameObject);
-			}
-			if (gameObject.layer == LayerMask.NameToLayer("playerProjectile") && other.gameObject.layer == LayerMask.NameToLayer("foe"))
-			{
-				CollislionHit(pos, rot);
-				Foe foe = other.gameObject.transform.parent.parent.parent.parent.GetComponent<Foe>();
-				foe.TakeDamage(this.m_Settings.m_Damage);
-				Destroy(gameObject);
-			}
-
-			if (other.gameObject.layer == LayerMask.NameToLayer("undestructibleProps"))
-			{
-				// don't detroy undestructible props
-				CollislionHit(pos,rot);
-				Destroy(gameObject);
-			}
-			if (other.gameObject.layer == LayerMask.NameToLayer("destructibleProps"))
-			{
-				CollislionHit(pos,rot);
-				Destroy(other.gameObject);
-				Destroy(gameObject);
-			}
-            if(other.gameObject.layer == LayerMask.NameToLayer("shield"))
+            if (other.gameObject.layer == LayerMask.NameToLayer("shield"))
             {
-                GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer--;
+                print("In shield");
 
-                if(GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer == 0)
+                Shield s = other.gameObject.GetComponent<Shield>();
+                if (s.m_Settings.m_CurrentType == ShieldSettings.Type.Ion && m_TypeColor == TypeColor.Ion)
                 {
-                    GameManager.Instance.m_Player.HideShield();
+                    Destroy(gameObject);
+                    GameManager.Instance.m_Player.ShieldHit();
                 }
-                else
+                if (s.m_Settings.m_CurrentType == ShieldSettings.Type.Laser && m_TypeColor == TypeColor.Laser)
                 {
-                    GameManager.Instance.m_Player.ShowShield();
+                    Destroy(gameObject);
+                    GameManager.Instance.m_Player.ShieldHit();
+                }
+            }
+            else
+            {
+                print("NO shield");
+                if (other.gameObject.layer == LayerMask.NameToLayer("undestructibleProps"))
+                {
+                    // don't detroy undestructible props
+                    CollislionHit(pos, rot);
+                    Destroy(gameObject);
+                }
+                else if (other.gameObject.layer == LayerMask.NameToLayer("destructibleProps"))
+                {
+                    CollislionHit(pos, rot);
+                    Destroy(other.gameObject);
+                    Destroy(gameObject);
+                }
+                else if (gameObject.layer == LayerMask.NameToLayer("foeProjectile") && other.gameObject.layer == LayerMask.NameToLayer("player"))
+                {
+                    CollislionHit(pos, rot);
+                    GameManager.Instance.m_Player.TakeDamage(this.m_Settings.m_Damage);
+                    Destroy(gameObject);
+                }
+                else if (gameObject.layer == LayerMask.NameToLayer("playerProjectile") && other.gameObject.layer == LayerMask.NameToLayer("foe"))
+                {
+                    CollislionHit(pos, rot);
+                    Foe foe = other.gameObject.transform.parent.parent.parent.parent.GetComponent<Foe>();
+                    foe.TakeDamage(this.m_Settings.m_Damage);
+                    Destroy(gameObject);
                 }
             }
 		}

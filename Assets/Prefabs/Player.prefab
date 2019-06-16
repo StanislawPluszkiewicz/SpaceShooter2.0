@@ -62,36 +62,6 @@ Transform:
   m_Father: {fileID: 1201970236363373910}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7274730274236489879
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1562843224086706660}
-  m_Layer: 14
-  m_Name: shieldEmplacement
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1562843224086706660
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7274730274236489879}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1201970236363373910}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8111835976498300776
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +93,6 @@ Transform:
   m_Children:
   - {fileID: 8111835977888191544}
   - {fileID: 5982052473034969853}
-  - {fileID: 1562843224086706660}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -141,15 +110,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Settings: {fileID: 11400000, guid: f024aa01112c04f4a9d9efb5c8c94bb6, type: 2}
   OnShipSettingsFoldout: 1
+  hitPrefab: {fileID: 3039707361048695868, guid: f637467031bcc054596c47509bfd890c,
+    type: 3}
   m_Weapons: []
   m_PlatformLayerMask:
     serializedVersion: 2
     m_Bits: 2048
   m_ShipWidth: 0.6815
+  m_Shield: {fileID: 0}
   m_MovementDirection: {x: 0, y: 0, z: 0}
   m_iMoney: 0
-  hitPrefab: {fileID: 3039707361048695868, guid: f637467031bcc054596c47509bfd890c,
-    type: 3}
 --- !u!54 &8111835976498300783
 Rigidbody:
   m_ObjectHideFlags: 0

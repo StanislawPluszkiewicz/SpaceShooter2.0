@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Speed: 20
   m_Acceleration: 1.5
   m_MaxSpeed: 50
+  m_TypeColor: 1
   hitPrefab: {fileID: 3039707361048695868, guid: e4ae88bad4676584881bb18959cd2a71,
     type: 3}
 --- !u!65 &2511537113434161943
