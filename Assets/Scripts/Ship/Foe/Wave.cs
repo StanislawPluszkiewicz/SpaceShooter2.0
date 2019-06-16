@@ -20,7 +20,6 @@
 			int i = 0;
 			foreach(Foe foePrefab in m_FoePrefabs)
 			{
-				print(i);
 				Foe foe = Instantiate(foePrefab, m_SpawnPosition, Quaternion.identity, transform) as Foe;
 				foe.transform.LookAt(foe.transform.position - player.forward);
 				foe.wave = this;

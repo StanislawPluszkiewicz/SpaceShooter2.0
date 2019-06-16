@@ -56,7 +56,7 @@
 		public void TakeDamage(int amount)
 		{
 			base.TakeDamage(amount);
-			print("foe took " + amount + " damage");
+			//print("foe took " + amount + " damage");
 			if (m_Settings.m_CurrentHealthPoints <= 0)
 			{
 				wave.DestroyFoe(this);
