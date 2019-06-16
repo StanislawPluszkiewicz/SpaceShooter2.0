@@ -38,7 +38,7 @@
 				weapon.belongsToPlayer = true;
 			}
 
-            m_Shield = Instantiate(m_Settings.m_ShieldPrefab, Vector3.zero,Quaternion.identity,transform) as Shield;
+            m_Shield = Instantiate(m_Settings.m_ShieldPrefab, transform.position ,Quaternion.identity,transform) as Shield;
         }
 
         void Update()
@@ -132,14 +132,29 @@
 
 		#endregion
 
+        public void ShieldHit()
+        {
+            m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer--;
+
+            if (m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer == 0)
+            {
+                HideShield();
+            }
+            else
+            {
+                ShowShield();
+            }
+        }
+
+
         public void HideShield()
         {
-            m_Shield.enabled = false;
+            m_Shield.gameObject.SetActive(false);
         }
 
         public void ShowShield()
         {
-            m_Shield.enabled = true;
+            m_Shield.gameObject.SetActive(true);
         }
 
 

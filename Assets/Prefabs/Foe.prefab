@@ -174,6 +174,7 @@ MonoBehaviour:
   - 3
   - 2
   - 2
+  wave: {fileID: 0}
 --- !u!1001 &8147619478938404704
 PrefabInstance:
   m_ObjectHideFlags: 0

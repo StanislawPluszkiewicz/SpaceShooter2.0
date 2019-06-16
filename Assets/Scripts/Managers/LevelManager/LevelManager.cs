@@ -45,6 +45,7 @@
 				m_SpawnedPlatforms = gameObject.AddComponent<PlatformManager>();
 			}
 			m_CurrentLevelIndex = index;
+			m_Levels[m_CurrentLevelIndex].isActive = true;
 			m_SpawnedPlatforms.InitLevel();
 			StartCoroutine(SpawnWaves());
 		}
@@ -72,15 +73,15 @@
 
 		private IEnumerator CheckLevelEnd()
 		{
-			print("checking for level end");
+			//print("checking for level end");
 			while (m_Waves.Count > 0)
 			{
-				print("waves count:" + m_Waves.Count);
+				//print("waves count:" + m_Waves.Count);
 				for(int i = 0; i < m_Waves.Count; ++i)
 				{
-					print("i:" + i);
-					print("wave is cleared" + m_Waves[i].isCleared());
-					print("foes in wave: " + m_Waves[i].m_Foes.Count);
+					//print("i:" + i);
+					//print("wave is cleared" + m_Waves[i].isCleared());
+					//print("foes in wave: " + m_Waves[i].m_Foes.Count);
 					if (m_Waves[i].isCleared())
 					{
 						m_Waves.Remove(m_Waves[i]);
@@ -170,7 +171,7 @@
         }
         public Platform SpawnPlatform()
         {
-			int index = Random.Range(0, m_LevelController.m_Levels[m_LevelController.m_CurrentLevelIndex].m_PlatformTemplates.Count - 1);
+			int index = Random.Range(0, m_LevelController.m_Levels[m_LevelController.m_CurrentLevelIndex].m_PlatformTemplates.Count);
 			if (m_AllSpawnedPlatformsCount <= 4)
 			{
 				index = 0;

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21d6dcf3d9360945b642fea2b1471b6, type: 3}
   m_Name: FoeDefault
   m_EditorClassIdentifier: 
-  m_CurrentHealthPoints: 10
+  m_CurrentHealthPoints: -130
   m_MaxHealthPoints: 20
   m_WeaponPrefabs:
   - {fileID: 7054321415685951879, guid: 1408a1bdb71bee64197d7f33ff314101, type: 3}
   m_ShieldPrefab: {fileID: 0}
-  m_AutoSpeedForward: 2.5
+  m_AutoSpeedForward: 5
   m_MoveSpeed: 5
   m_LIRotation: 20
   m_LIPosition: 1
