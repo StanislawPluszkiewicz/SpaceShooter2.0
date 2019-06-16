@@ -134,29 +134,19 @@
 
         public void ShieldHit()
         {
-            m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer--;
+            m_Shield.m_Settings.m_iCurrentLayer--;
 
-            if (m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer == 0)
+            StartCoroutine(m_Shield.Recharge());
+
+            if (m_Shield.m_Settings.m_iCurrentLayer == 0)
             {
-                HideShield();
+                m_Shield.Hide();
             }
             else
             {
-                ShowShield();
+                m_Shield.Show();
             }
         }
-
-
-        public void HideShield()
-        {
-            m_Shield.gameObject.SetActive(false);
-        }
-
-        public void ShowShield()
-        {
-            m_Shield.gameObject.SetActive(true);
-        }
-
 
 		#region Debug
 		private void OnDrawGizmos()

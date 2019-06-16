@@ -15,5 +15,5 @@ MonoBehaviour:
   m_iTotalLayer: 1
   m_iCurrentLayer: 1
   m_CurrentType: 0
-  m_Cooldown: 0
+  m_Cooldown: 10
   m_CooldownTimeStamp: 0
