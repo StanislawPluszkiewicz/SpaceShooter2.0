@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 6752033717625658454}
   - component: {fileID: 961165128214873851}
   m_Layer: 0
-  m_Name: ProjectileRed
+  m_Name: ProjectileRedRapid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,10 +184,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d571f9439e7954c82f45936cd07beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Settings: {fileID: 11400000, guid: cfbbf11ed64ada14ea38863457e3d40b, type: 2}
-  m_Speed: 10
+  m_Settings: {fileID: 11400000, guid: 9446a132640ab87439916c2066106528, type: 2}
+  m_Speed: 20
   m_Acceleration: 1.5
-  m_MaxSpeed: 20
+  m_MaxSpeed: 50
   m_TypeColor: 1
   hitPrefab: {fileID: 3039707361048695868, guid: e4ae88bad4676584881bb18959cd2a71,
     type: 3}

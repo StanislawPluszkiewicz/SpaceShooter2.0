@@ -17,9 +17,6 @@ MonoBehaviour:
     type: 3}
   m_SpawnTransform: {fileID: 414426425334077824, guid: c9fffc3e6a1904f4dbd4910bf2b1695c,
     type: 3}
-  m_Speed: 3
-  m_Acceleration: 1.5
-  m_MaxSpeed: 10
   m_Random: 0
   type: 0
   m_Straight:

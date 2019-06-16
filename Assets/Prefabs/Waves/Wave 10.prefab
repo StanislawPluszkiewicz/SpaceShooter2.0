@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2765228828124741463}
   - component: {fileID: 2765228828124741464}
   m_Layer: 0
-  m_Name: Wave 2
+  m_Name: Wave 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,8 +46,6 @@ MonoBehaviour:
   m_TimeToClear: 2
   m_CanBeSkipedAfterDelay: 0
   m_FoePrefabs:
-  - {fileID: 2811304759262536374, guid: f787ddcdbeaeae04b8282e459fe214a5, type: 3}
-  - {fileID: 2811304759262536374, guid: f787ddcdbeaeae04b8282e459fe214a5, type: 3}
-  - {fileID: 2811304759262536374, guid: f787ddcdbeaeae04b8282e459fe214a5, type: 3}
+  - {fileID: 2811304759262536374, guid: 94bea9bbe4be8614c927fcc507da040d, type: 3}
   m_Foes: []
-  m_TimeBetweenSpawns: 0.1
+  m_TimeBetweenSpawns: 0.2

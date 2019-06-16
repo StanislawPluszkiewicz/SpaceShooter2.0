@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21d6dcf3d9360945b642fea2b1471b6, type: 3}
+  m_Name: FoeBigLaser
+  m_EditorClassIdentifier: 
+  m_CurrentHealthPoints: 0
+  m_MaxHealthPoints: 150
+  m_WeaponPrefabs:
+  - {fileID: 5963384150563310921, guid: 1f899fa0b2afb91459b2fe158478cce7, type: 3}
+  m_ShieldPrefab: {fileID: 0}
+  m_AutoSpeedForward: 5
+  m_MoveSpeed: 5
+  m_LIRotation: 20
+  m_LIPosition: 1

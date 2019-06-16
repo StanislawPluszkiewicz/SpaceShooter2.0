@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   belongsToPlayer: 0
-  m_Cooldown: 0.5
+  m_Cooldown: 2
   m_CooldownTimeStamp: 0
   m_Projectile: {fileID: 3413210527761886852, guid: 88c5a2f09558e7e428f17ab1610a297d,
     type: 3}

@@ -99,8 +99,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.30869076, b: 0.1273585, a: 0.7058824}
-      key1: {r: 1, g: 0.6591044, b: 0.2028302, a: 0}
+      key0: {r: 0.12549019, g: 0.5760549, b: 1, a: 0.7058824}
+      key1: {r: 0.20392156, g: 0.79797584, b: 1, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -146,10 +146,10 @@ GameObject:
   - component: {fileID: 3889270832286403325}
   - component: {fileID: 3413210527761886852}
   - component: {fileID: 2511537113434161943}
-  - component: {fileID: 6752033717625658454}
-  - component: {fileID: 961165128214873851}
+  - component: {fileID: 4374025879312473968}
+  - component: {fileID: 3888859950813553317}
   m_Layer: 0
-  m_Name: ProjectileRed
+  m_Name: ProjectileBlueBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,12 +184,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d571f9439e7954c82f45936cd07beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Settings: {fileID: 11400000, guid: cfbbf11ed64ada14ea38863457e3d40b, type: 2}
-  m_Speed: 10
+  m_Settings: {fileID: 11400000, guid: 5a7308d7f5746e742b9a3185f6e5f8b3, type: 2}
+  m_Speed: 20
   m_Acceleration: 1.5
-  m_MaxSpeed: 20
-  m_TypeColor: 1
-  hitPrefab: {fileID: 3039707361048695868, guid: e4ae88bad4676584881bb18959cd2a71,
+  m_MaxSpeed: 50
+  m_TypeColor: 0
+  hitPrefab: {fileID: 3039707361048695868, guid: 2e8820ee778dbb34983cc98317d824ff,
     type: 3}
 --- !u!65 &2511537113434161943
 BoxCollider:
@@ -204,7 +204,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.26066923, y: 0.287879, z: 0.43}
   m_Center: {x: 0.0036638975, y: 0.015613079, z: 0.41}
---- !u!54 &6752033717625658454
+--- !u!54 &4374025879312473968
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,7 +220,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!82 &961165128214873851
+--- !u!82 &3888859950813553317
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -537,8 +537,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 0.2216981, b: 0.2216981, a: 1}
-      maxColor: {r: 0.990566, g: 0.48321298, b: 0.19157171, a: 1}
+      minColor: {r: 0.03137255, g: 0.6745098, b: 0.972549, a: 1}
+      maxColor: {r: 0.18431373, g: 0.9607843, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5235,8 +5235,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 0.2216981, b: 0.2216981, a: 1}
-      maxColor: {r: 0.990566, g: 0.48321298, b: 0.19157171, a: 1}
+      minColor: {r: 0.03208439, g: 0.675062, b: 0.9716981, a: 1}
+      maxColor: {r: 0.18396229, g: 0.95966023, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

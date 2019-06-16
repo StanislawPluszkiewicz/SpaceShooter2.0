@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2765228828124741462
+--- !u!1 &3383868297587240199
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2765228828124741463}
-  - component: {fileID: 2765228828124741464}
+  - component: {fileID: 4331771830844774737}
+  - component: {fileID: 5963384150563310921}
   m_Layer: 0
-  m_Name: Wave 2
+  m_Name: weaponRedRapid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2765228828124741463
+--- !u!4 &4331771830844774737
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2765228828124741462}
+  m_GameObject: {fileID: 3383868297587240199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,23 +31,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2765228828124741464
+--- !u!114 &5963384150563310921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2765228828124741462}
+  m_GameObject: {fileID: 3383868297587240199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9233973c7e601041afc33fb9c52bca6, type: 3}
+  m_Script: {fileID: 11500000, guid: 99d9679415429ca48afeff000d45625e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TimeToClear: 2
-  m_CanBeSkipedAfterDelay: 0
-  m_FoePrefabs:
-  - {fileID: 2811304759262536374, guid: f787ddcdbeaeae04b8282e459fe214a5, type: 3}
-  - {fileID: 2811304759262536374, guid: f787ddcdbeaeae04b8282e459fe214a5, type: 3}
-  - {fileID: 2811304759262536374, guid: f787ddcdbeaeae04b8282e459fe214a5, type: 3}
-  m_Foes: []
-  m_TimeBetweenSpawns: 0.1
+  belongsToPlayer: 0
+  m_Cooldown: 0.5
+  m_CooldownTimeStamp: 0
+  m_Projectile: {fileID: 3413210527761886852, guid: b90c275b314d19b4190243066f25d4c7,
+    type: 3}
+  m_Cost: 100
