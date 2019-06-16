@@ -10,6 +10,7 @@
 		public bool m_CanBeSkipedAfterDelay;
 		public List<Foe> m_FoePrefabs;
 		[HideInInspector] public List<Foe> m_Foes;
+		public float m_TimeBetweenSpawns;
 
 		private Vector3 m_SpawnPosition;
 
@@ -25,7 +26,7 @@
 				foe.transform.LookAt(foe.transform.position - player.forward);
 				foe.wave = this;
 				m_Foes.Add(foe);
-				yield return null;
+				yield return new WaitForSeconds(m_TimeBetweenSpawns);
 			}
 		}
 

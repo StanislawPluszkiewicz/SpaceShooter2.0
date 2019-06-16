@@ -25,22 +25,26 @@
 
 		public void Shoot(Vector3 shooterPosition, Vector3 direction)
 		{
-			if (m_CooldownTimeStamp <= Time.time)
+			if (LevelManager.Instance.m_Levels[LevelManager.Instance.m_CurrentLevelIndex].isActive)
 			{
-				Projectile projectilePrefab = m_Projectile.m_Settings.m_Projectile;
-				Projectile projectile = Instantiate(projectilePrefab, shooterPosition,
-					Quaternion.identity, GameManager.Instance.m_ProjectilesParent.transform) as Projectile;
-				projectile.transform.LookAt(projectile.transform.position + direction);
-				projectile.InitMove(direction);
-				if (belongsToPlayer)
+
+				if (m_CooldownTimeStamp <= Time.time)
 				{
-					projectile.gameObject.layer = 16;
+					Projectile projectilePrefab = m_Projectile.m_Settings.m_Projectile;
+					Projectile projectile = Instantiate(projectilePrefab, shooterPosition,
+						Quaternion.identity, GameManager.Instance.m_ProjectilesParent.transform) as Projectile;
+					projectile.transform.LookAt(projectile.transform.position + direction);
+					projectile.InitMove(direction);
+					if (belongsToPlayer)
+					{
+						projectile.gameObject.layer = 16;
+					}
+					else
+					{
+						projectile.gameObject.layer = 17;
+					}
+					m_CooldownTimeStamp = Time.time + m_Cooldown;
 				}
-				else
-				{
-					projectile.gameObject.layer = 17;
-				}
-				m_CooldownTimeStamp = Time.time + m_Cooldown;
 			}
 		}
 	}

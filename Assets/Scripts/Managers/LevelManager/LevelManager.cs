@@ -45,6 +45,7 @@
 				m_SpawnedPlatforms = gameObject.AddComponent<PlatformManager>();
 			}
 			m_CurrentLevelIndex = index;
+			m_Levels[m_CurrentLevelIndex].isActive = true;
 			m_SpawnedPlatforms.InitLevel();
 			StartCoroutine(SpawnWaves());
 		}
@@ -170,7 +171,7 @@
         }
         public Platform SpawnPlatform()
         {
-			int index = Random.Range(0, m_LevelController.m_Levels[m_LevelController.m_CurrentLevelIndex].m_PlatformTemplates.Count - 1);
+			int index = Random.Range(0, m_LevelController.m_Levels[m_LevelController.m_CurrentLevelIndex].m_PlatformTemplates.Count);
 			if (m_AllSpawnedPlatformsCount <= 4)
 			{
 				index = 0;

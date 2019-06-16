@@ -12,7 +12,7 @@
 		private int m_iPlayerRelativePositionsIndex = 0;
 
 		private Animator animator;
-		public Wave wave;
+		[HideInInspector] public Wave wave;
 
 
 		private void Awake()
