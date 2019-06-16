@@ -21,15 +21,14 @@
 
 		public void Awake()
 		{			
+			source = GetComponent<AudioSource>();
 			m_Type = ProjectileTypeFactory.Create(m_Settings);
 			//Destroy(gameObject,5);
 		}
 		public void Start(){	
-			var pos = GameManager.Instance.m_Player.transform.position;
-			AudioClip clip = GetComponent<AudioSource>().clip;			
-			GetComponent<AudioSource>().volume = (pos.z)/(10*(this.transform.position.z));
-			float volume = GetComponent<AudioSource>().volume;
-			AudioSource.PlayClipAtPoint(clip,this.gameObject.transform.position,volume);
+			var pos = GameManager.Instance.m_Player.transform.position;		
+			source.volume = (pos.z)/(10*(this.transform.position.z));
+			AudioSource.PlayClipAtPoint(source.clip,this.gameObject.transform.position,source.volume);
 		}
 		public void InitMove(Vector3 targetDirection)
 		{
@@ -65,24 +64,24 @@
                 if (other.gameObject.layer == LayerMask.NameToLayer("undestructibleProps"))
                 {
                     // don't detroy undestructible props
-                    CollislionHit(pos, rot);
+                    CollisionHit(pos, rot);
                     Destroy(gameObject);
                 }
                 else if (other.gameObject.layer == LayerMask.NameToLayer("destructibleProps"))
                 {
-                    CollislionHit(pos, rot);
+                    CollisionHit(pos, rot);
                     Destroy(other.gameObject);
                     Destroy(gameObject);
                 }
                 else if (gameObject.layer == LayerMask.NameToLayer("foeProjectile") && other.gameObject.layer == LayerMask.NameToLayer("player"))
                 {
-                    CollislionHit(pos, rot);
+                    CollisionHit(pos, rot);
                     GameManager.Instance.m_Player.TakeDamage(this.m_Settings.m_Damage);
                     Destroy(gameObject);
                 }
                 else if (gameObject.layer == LayerMask.NameToLayer("playerProjectile") && other.gameObject.layer == LayerMask.NameToLayer("foe"))
                 {
-                    CollislionHit(pos, rot);
+                    CollisionHit(pos, rot);
                     Foe foe = other.gameObject.transform.parent.parent.parent.parent.GetComponent<Foe>();
                     foe.TakeDamage(this.m_Settings.m_Damage);
                     Destroy(gameObject);
@@ -90,17 +89,16 @@
             }
 		}
 		
-		void CollislionHit(Vector3 position, Quaternion rotation){
+		void CollisionHit(Vector3 position, Quaternion rotation){
 			if(hitPrefab != null){
 				//Instantiate prefab
 				var hitVFX = Instantiate(hitPrefab, position, rotation, GameManager.Instance.m_VFXParent.transform);	
 				
 				//HitSound settings
+				AudioSource hitSource = hitVFX.GetComponent<AudioSource>();
 				var pos = GameManager.Instance.m_Player.transform.position;
-				hitVFX.GetComponent<AudioSource>().volume = (pos.z)/(10*(this.transform.position.z));
-				AudioClip clip = hitVFX.GetComponent<AudioSource>().clip;
-				float volume = hitVFX.GetComponent<AudioSource>().volume;
-				AudioSource.PlayClipAtPoint(clip, position, volume);
+				hitSource.volume = (pos.z)/(10*(this.transform.position.z));
+				AudioSource.PlayClipAtPoint(hitSource.clip, position, hitSource.volume);
 				
 				//Destroy Hit
 				var psHit = hitVFX.GetComponent<ParticleSystem>();
