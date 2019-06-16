@@ -169,7 +169,7 @@
 			StartLevel(LevelManager.Instance.m_CurrentLevelIndex);
 		}
 
-		void StartLevel(int id)
+		public void StartLevel(int id)
 		{
 			Cursor.visible = false;
 			InitDynamicsHierarchy();

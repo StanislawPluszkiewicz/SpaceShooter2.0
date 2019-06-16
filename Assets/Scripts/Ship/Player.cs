@@ -19,7 +19,8 @@
 		{
 			if (GameManager.Instance.m_Player == null)
 				GameManager.Instance.m_Player = Instantiate(GameManager.Instance.m_PlayerPrefab, GameManager.Instance.m_PlayerSpawnPosition, Quaternion.identity) as Player;
-			GameManager.Instance.m_Player.InitPlayer();
+			GameManager.Instance.m_Player.transform.position = GameManager.Instance.m_PlayerSpawnPosition;
+			GameManager.Instance.m_Player.transform.rotation = Quaternion.identity;
 		}
         #endregion
 
@@ -31,8 +32,6 @@
 
 		public void InitPlayer()
 		{
-			transform.position = GameManager.Instance.m_PlayerSpawnPosition;
-			transform.rotation = Quaternion.identity;
 			this.m_iMoney = 0;
 			this.m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer = this.m_Settings.m_ShieldPrefab.m_Settings.m_iTotalLayer;
 			m_Camera = FindObjectOfType<CameraController>();
