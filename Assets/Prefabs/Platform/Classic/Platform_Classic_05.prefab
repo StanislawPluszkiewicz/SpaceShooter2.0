@@ -623,6 +623,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23225354873649282, guid: 865017ad3bd5a9f459ba686425025f0d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8a858a7195b0374da4f5216e315f2c5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 865017ad3bd5a9f459ba686425025f0d, type: 3}
 --- !u!4 &3801557650132309706 stripped
@@ -706,6 +711,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23706882393879366, guid: beea4272d55dc8748a807b8867413d29,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a39e1c55887d29741890f9796d94e6ae, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beea4272d55dc8748a807b8867413d29, type: 3}
 --- !u!4 &4181935642342246464 stripped
@@ -906,6 +916,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.062332
       objectReference: {fileID: 0}
+    - target: {fileID: 23809588804918286, guid: ccaea63f12cc2b14abd509e6308dfb5b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e900d80555efa444b575c8ebdccf8cd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccaea63f12cc2b14abd509e6308dfb5b, type: 3}
 --- !u!4 &5422122701842524914 stripped
@@ -1154,6 +1169,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23332911746848122, guid: b05d7cce329cede47971bf85238d3c3f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bc0f0539f1718824b8df99cae2419b9f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b05d7cce329cede47971bf85238d3c3f, type: 3}
 --- !u!4 &9119188956892795806 stripped

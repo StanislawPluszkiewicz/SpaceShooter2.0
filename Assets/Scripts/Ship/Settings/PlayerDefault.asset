@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21d6dcf3d9360945b642fea2b1471b6, type: 3}
   m_Name: PlayerDefault
   m_EditorClassIdentifier: 
-  m_CurrentHealthPoints: 50
+  m_CurrentHealthPoints: 100
   m_MaxHealthPoints: 100
   m_WeaponPrefabs:
   - {fileID: 7054321415685951879, guid: 1408a1bdb71bee64197d7f33ff314101, type: 3}
   - {fileID: 5963384150563310921, guid: 1f899fa0b2afb91459b2fe158478cce7, type: 3}
   m_ShieldPrefab: {fileID: 1901098498053699211, guid: 38a791e9d811bd5418a6db1f6e97a05b,
     type: 3}
-  m_AutoSpeedForward: 2.5
+  m_AutoSpeedForward: 15
   m_MoveSpeed: 5
   m_LIRotation: 3
   m_LIPosition: 3
