@@ -22,8 +22,9 @@ namespace ESIEE_UNITY_ETS
         [SerializeField] GameObject m_PanelConfirmQuit;
 		[SerializeField] GameObject m_Hud;
         [SerializeField] GameObject m_PanelCredits;
+		[SerializeField] GameObject m_PanelShop;
 
-        List<GameObject> m_AllPanels;
+		List<GameObject> m_AllPanels;
 
         private bool isOnMainMenu = false;
 
@@ -81,6 +82,7 @@ namespace ESIEE_UNITY_ETS
 			m_AllPanels.Add(m_PanelConfirmQuit);
 			m_AllPanels.Add(m_Hud);
             m_AllPanels.Add(m_PanelCredits);
+            m_AllPanels.Add(m_PanelShop);
 		}
 
 		void OpenPanel(GameObject panel)
@@ -152,6 +154,11 @@ namespace ESIEE_UNITY_ETS
 			OpenPanel(m_PanelGameOver);
 			GetComponent<AudioSource>().Stop();
 			GetComponent<AudioSource>().PlayOneShot(menuMusic);
+		}
+
+		public void GameShop(GameShopEvent e)
+		{
+			OpenPanel(m_PanelShop);
 		}
 		#endregion
 

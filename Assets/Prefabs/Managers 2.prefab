@@ -52,6 +52,7 @@ MonoBehaviour:
   m_PanelConfirmQuit: {fileID: 0}
   m_Hud: {fileID: 0}
   m_PanelCredits: {fileID: 0}
+  m_PanelShop: {fileID: 0}
 --- !u!1 &6688137246784415429
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,13 +192,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DoNotDestroyGameObjectOnLoad: 1
-  m_ShipDistanceToGround: 2.2
+  m_ShipDistanceToGround: 1.5
   m_VisibleNextPlatforms: 20
   m_Levels:
   - {fileID: 11400000, guid: 1cd33846b754b524a846abb826cbc3e5, type: 2}
   m_CurrentLevelIndex: 0
   m_SpawnedPlatforms: {fileID: 0}
   m_SpawnNext: 1
+  m_Waves: []
 --- !u!1 &6902986064011886242
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +253,6 @@ MonoBehaviour:
   m_Camera: {fileID: 0}
   m_CameraSpawnPosition: {x: -15, y: 15, z: -3}
   m_DynamicParent: {fileID: 0}
-  m_FoesParent: {fileID: 0}
   m_ProjectilesParent: {fileID: 0}
   m_PlateformesParent: {fileID: 0}
   m_OrbitalsParent: {fileID: 0}
