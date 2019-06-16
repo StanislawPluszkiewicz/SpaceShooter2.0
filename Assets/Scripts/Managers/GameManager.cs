@@ -171,7 +171,6 @@
 
 		void StartLevel(int id)
 		{
-			print("starting level: "+ id);
 			Cursor.visible = false;
 			InitDynamicsHierarchy();
             Player.Init();

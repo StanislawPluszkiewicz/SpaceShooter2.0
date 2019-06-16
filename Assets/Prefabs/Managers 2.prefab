@@ -55,9 +55,10 @@ MonoBehaviour:
   m_PanelCredits: {fileID: 0}
   m_PanelShop: {fileID: 0}
   menuMusic: {fileID: 8300000, guid: 5750a6ebe73889641ad312bcc13803fa, type: 3}
-  level1: {fileID: 8300000, guid: 86a5a44c5ca62a044b197c7bae0ca518, type: 3}
-  level2: {fileID: 8300000, guid: 39b9a9f7b07183240b8e0235cd879458, type: 3}
-  level3: {fileID: 8300000, guid: c15888efa8ba2674e9a41039f8b6e5bc, type: 3}
+  levelsMusic:
+  - {fileID: 8300000, guid: 86a5a44c5ca62a044b197c7bae0ca518, type: 3}
+  - {fileID: 8300000, guid: 39b9a9f7b07183240b8e0235cd879458, type: 3}
+  - {fileID: 8300000, guid: c15888efa8ba2674e9a41039f8b6e5bc, type: 3}
 --- !u!82 &203915321
 AudioSource:
   m_ObjectHideFlags: 0
@@ -297,6 +298,8 @@ MonoBehaviour:
   m_VisibleNextPlatforms: 20
   m_Levels:
   - {fileID: 11400000, guid: 1cd33846b754b524a846abb826cbc3e5, type: 2}
+  - {fileID: 11400000, guid: 83358f7b1287d9f44adbd6b67bf1491e, type: 2}
+  - {fileID: 11400000, guid: 835ec99915e545245ae2f02e48849d1d, type: 2}
   m_CurrentLevelIndex: 0
   m_SpawnedPlatforms: {fileID: 0}
   m_SpawnNext: 1

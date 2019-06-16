@@ -750,10 +750,6 @@ PrefabInstance:
       value: Managers
       objectReference: {fileID: 0}
     - target: {fileID: 203915320, guid: 2eb004c075b04d3418b146d699e82a5a, type: 3}
-      propertyPath: levelsMusic.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 203915320, guid: 2eb004c075b04d3418b146d699e82a5a, type: 3}
       propertyPath: m_PanelMainMenu
       value: 
       objectReference: {fileID: 896702977}
@@ -789,18 +785,6 @@ PrefabInstance:
       propertyPath: m_PanelShop
       value: 
       objectReference: {fileID: 622298612}
-    - target: {fileID: 203915320, guid: 2eb004c075b04d3418b146d699e82a5a, type: 3}
-      propertyPath: levelsMusic.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 86a5a44c5ca62a044b197c7bae0ca518, type: 3}
-    - target: {fileID: 203915320, guid: 2eb004c075b04d3418b146d699e82a5a, type: 3}
-      propertyPath: levelsMusic.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 39b9a9f7b07183240b8e0235cd879458, type: 3}
-    - target: {fileID: 203915320, guid: 2eb004c075b04d3418b146d699e82a5a, type: 3}
-      propertyPath: levelsMusic.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: c15888efa8ba2674e9a41039f8b6e5bc, type: 3}
     - target: {fileID: 6253729600601138342, guid: 2eb004c075b04d3418b146d699e82a5a,
         type: 3}
       propertyPath: m_LocalPosition.x

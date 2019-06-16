@@ -31,7 +31,8 @@
 
 		public void InitPlayer()
 		{
-
+			transform.position = GameManager.Instance.m_PlayerSpawnPosition;
+			transform.rotation = Quaternion.identity;
 			this.m_iMoney = 0;
 			this.m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer = this.m_Settings.m_ShieldPrefab.m_Settings.m_iTotalLayer;
 			m_Camera = FindObjectOfType<CameraController>();
