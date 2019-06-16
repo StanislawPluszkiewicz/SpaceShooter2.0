@@ -3,7 +3,7 @@
 ##################
 
 But du jeu : Réussissez à vous enfuir avec votre vaisseau en évitant les débris et les ennemis.
-Controles : ZQSD pour se déplacer.
+Controles : Flèches directionnelles pour se déplacer et espace pour tirer.
 Victoire : Atteindre la fin des 3 niveaux.
 Défaite : Votre vaisseau atteint 0 en vie.
 Evénements : Entre chaque niveau, utilisez un magasin pour réparer et améliorer votre vaisseau.
@@ -20,6 +20,9 @@ Si nous avions eu plus de temps pour réaliser le projet, nous aurions pu mettre 
 
 Divers problèmes avec git ont aussi rendu le projet plus fastidieux. 
 
+Le changement d'un niveau à un autre ne semble pas marcher. Pour jouer à tous les niveaux il faut passer par la séléction de niveaux dans le menu principal.
+Egalement, le déplacement sur la face du bas de la plateforme ne fonctionne pas car le vaisseau se retourne à 180°.
+
 ###################
 #   REPARTITIONS  #
 ###################
@@ -30,6 +33,9 @@ Théodore :
 	Quelques éléments du décor/graphiques(nuage d'astéroïdes, néons)
 
 Stanislaw :
+	Système de tir (armes + projectiles)
+	Système de déplacement (IA + joueur)
+	Vaisseaux
 
 Ellmo :
 	Interfaces + HUD
