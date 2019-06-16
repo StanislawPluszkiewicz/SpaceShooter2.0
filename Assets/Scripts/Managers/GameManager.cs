@@ -171,7 +171,7 @@
 
 		public void StartLevel(int id)
 		{
-			MenuManager.Instance.StartLevel(LevelManager.Instance.m_CurrentLevelIndex);
+			MenuManager.Instance.StartLevel(id);
 			Cursor.visible = false;
 			InitDynamicsHierarchy();
             Player.Init();
