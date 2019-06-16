@@ -63,13 +63,10 @@
 				instance.transform.parent = GameManager.Instance.m_DynamicParent.transform;
 				m_Waves.Add(instance);
 				StartCoroutine(instance.Spawn());
-				print("waiting for wave end");
 				while (!instance.isCleared())
 				{
 					yield return null;
 				}
-
-				print("end wave");
 			}
 			GameManager.Instance.EndLevel();
 		}

@@ -31,9 +31,7 @@ namespace ESIEE_UNITY_ETS
 		#endregion
 		#region Music
 		public AudioClip menuMusic;
-		public AudioClip level1;
-		public AudioClip level2;
-		public AudioClip level3;
+		public List<AudioClip> levelsMusic;
 		#endregion
 
 		#region Events' subscription
@@ -143,7 +141,7 @@ namespace ESIEE_UNITY_ETS
 			if (m_AudioSource)
 			{
 				m_AudioSource.Stop();
-				m_AudioSource.PlayOneShot(level1);
+				m_AudioSource.PlayOneShot(levelsMusic[LevelManager.Instance.m_CurrentLevelIndex]);
 			}
 		}
 
@@ -163,7 +161,7 @@ namespace ESIEE_UNITY_ETS
 			if (m_AudioSource)
 			{
 				m_AudioSource.Stop();
-				m_AudioSource.PlayOneShot(level1);
+				m_AudioSource.PlayOneShot(levelsMusic[LevelManager.Instance.m_CurrentLevelIndex]);
 			}
 		}
 
@@ -184,6 +182,16 @@ namespace ESIEE_UNITY_ETS
 			{
 				m_AudioSource.Stop();
 				m_AudioSource.PlayOneShot(menuMusic);
+			}
+		}
+
+		public void StartLevel(int level)
+		{
+			OpenPanel(m_Hud);
+			if (m_AudioSource)
+			{
+				m_AudioSource.Stop();
+				m_AudioSource.PlayOneShot(levelsMusic[level]);
 			}
 		}
 		#endregion
