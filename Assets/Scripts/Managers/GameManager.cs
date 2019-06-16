@@ -187,7 +187,8 @@
 		public void Lose()
 		{
 			Cursor.visible = true;
-            Over();
+			LevelManager.Instance.m_CurrentLevelIndex = -1;
+			Over();
 		}
 
 		public void EndLevel()

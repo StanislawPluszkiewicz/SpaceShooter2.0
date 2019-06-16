@@ -180,6 +180,11 @@ namespace ESIEE_UNITY_ETS
 		public void GameShop(GameShopEvent e)
 		{
 			OpenPanel(m_PanelShop);
+			if (m_AudioSource)
+			{
+				m_AudioSource.Stop();
+				m_AudioSource.PlayOneShot(menuMusic);
+			}
 		}
 		#endregion
 
