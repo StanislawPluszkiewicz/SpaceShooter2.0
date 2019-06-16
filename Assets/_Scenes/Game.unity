@@ -956,5 +956,10 @@ PrefabInstance:
       propertyPath: m_WeaponRightPrice
       value: 
       objectReference: {fileID: 941659209}
+    - target: {fileID: 6902986063651492161, guid: 2eb004c075b04d3418b146d699e82a5a,
+        type: 3}
+      propertyPath: m_ShipDistanceToGround
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb004c075b04d3418b146d699e82a5a, type: 3}

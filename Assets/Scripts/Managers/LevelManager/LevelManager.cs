@@ -60,9 +60,10 @@
 			foreach (Wave wave in m_Levels[m_CurrentLevelIndex].m_WaveTemplates)
 			{
 				Wave instance = Instantiate(wave) as Wave;
-				wave.transform.parent = GameManager.Instance.m_DynamicParent.transform;
+				instance.transform.parent = GameManager.Instance.m_DynamicParent.transform;
 				m_Waves.Add(instance);
-				instance.Spawn();
+				StartCoroutine(instance.Spawn());
+				print("waiting for " + instance.m_TimeToClear + " seconds");
 				yield return new WaitForSeconds(instance.m_TimeToClear);
 				index++;
 			}
@@ -71,13 +72,19 @@
 
 		private IEnumerator CheckLevelEnd()
 		{
-			while(m_Waves.Count > 0)
+			print("checking for level end");
+			while (m_Waves.Count > 0)
 			{
-				foreach(Wave wave in m_Waves)
+				print("waves count:" + m_Waves.Count);
+				for(int i = 0; i < m_Waves.Count; ++i)
 				{
-					if (wave.isCleared())
+					print("i:" + i);
+					print("wave is cleared" + m_Waves[i].isCleared());
+					print("foes in wave: " + m_Waves[i].m_Foes.Count);
+					if (m_Waves[i].isCleared())
 					{
-						m_Waves.Remove(wave);
+						m_Waves.Remove(m_Waves[i]);
+						--i;
 					}
 				}
 				yield return null;
@@ -164,6 +171,10 @@
         public Platform SpawnPlatform()
         {
 			int index = Random.Range(0, m_LevelController.m_Levels[m_LevelController.m_CurrentLevelIndex].m_PlatformTemplates.Count - 1);
+			if (m_AllSpawnedPlatformsCount <= 4)
+			{
+				index = 0;
+			}
 			Platform platformPrefab = m_LevelController.m_Levels[m_LevelController.m_CurrentLevelIndex].m_PlatformTemplates[index];
             Vector3 spawnPoint = transform.position + (Vector3.forward * platformPrefab.m_MiddleSection.transform.localScale.z * m_AllSpawnedPlatformsCount);
             m_AllSpawnedPlatformsCount++;

@@ -43,6 +43,21 @@
 			ContactPoint contact = other.contacts[0];
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
 			Vector3 pos = contact.point;
+
+			if (gameObject.layer == LayerMask.NameToLayer("foeProjectile") && other.gameObject.layer == LayerMask.NameToLayer("player"))
+			{
+				CollislionHit(pos, rot);
+				GameManager.Instance.m_Player.TakeDamage(this.m_Settings.m_Damage);
+				Destroy(gameObject);
+			}
+			if (gameObject.layer == LayerMask.NameToLayer("playerProjectile") && other.gameObject.layer == LayerMask.NameToLayer("foe"))
+			{
+				CollislionHit(pos, rot);
+				Foe foe = other.gameObject.transform.parent.parent.parent.parent.GetComponent<Foe>();
+				foe.TakeDamage(this.m_Settings.m_Damage);
+				Destroy(gameObject);
+			}
+
 			if (other.gameObject.layer == LayerMask.NameToLayer("undestructibleProps"))
 			{
 				// don't detroy undestructible props
@@ -54,18 +69,6 @@
 				CollislionHit(pos,rot);
 				Destroy(other.gameObject);
 				Destroy(gameObject);
-			}
-			if (gameObject.layer == LayerMask.NameToLayer("foeProjectile") && other.gameObject.layer == LayerMask.NameToLayer("player"))
-			{
-				CollislionHit(pos,rot);
-				GameManager.Instance.m_Player.TakeDamage(this.m_Settings.m_Damage);
-				DestroyImmediate(gameObject);
-			}
-			if (gameObject.layer == LayerMask.NameToLayer("playerProjectile") && other.gameObject.layer == LayerMask.NameToLayer("foe"))
-			{
-				CollislionHit(pos,rot);
-				// GameManager.Instance.m_Player.TakeDamage(this.m_Settings.m_Damage);
-				DestroyImmediate(gameObject);
 			}
 		}
 		

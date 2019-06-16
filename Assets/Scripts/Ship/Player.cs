@@ -86,7 +86,7 @@
 		}
 		public void TakeDamage(int amount)
 		{
-			m_Settings.m_CurrentHealthPoints -= amount;
+			base.TakeDamage(amount);
 			if (m_Settings.m_CurrentHealthPoints <= 0)
 			{
 				GameManager.Instance.Lose();

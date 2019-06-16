@@ -185,6 +185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HyperFalcon9
       objectReference: {fileID: 0}
+    - target: {fileID: 1304079760355286, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4427994111050356, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -228,6 +232,34 @@ PrefabInstance:
     - target: {fileID: 4427994111050356, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650035704537276, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643752248196230, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480897513091880, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088056169948142, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737854393398584, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046431319003196, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257274446453326, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1125d37e8a12ba44e8e5881e61c58146, type: 3}

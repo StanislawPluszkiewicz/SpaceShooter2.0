@@ -10,7 +10,6 @@
 		//    Déplacements (sur le pavé droit)
 		//    Défense(shield bleu -> ionique / rouge -> laser)
 
-
 		#region Settings
 		[SerializeField]  public ShipSettings m_Settings;
 		[HideInInspector] public bool OnShipSettingsFoldout;
@@ -91,9 +90,15 @@
 				weapon.Shoot(shooterPosition, direction);
 			}
 		}
+
+		public void TakeDamage(int amount)
+		{
+			m_Settings.m_CurrentHealthPoints -= amount;
+		}
+
 		#endregion
 		#region Movement
-//TODO: the player rotation isn't properly set once changing a face -> rotation has to perpendicular to the face on which the player is otherwise the ship player will move by itself which is a behaviour to remove.
+		//TODO: the player rotation isn't properly set once changing a face -> rotation has to perpendicular to the face on which the player is otherwise the ship player will move by itself which is a behaviour to remove.
 
 		private bool GetRaycastDownAtNewPosition(Vector3 movementDirection, out RaycastHit hitInfo)
 		{

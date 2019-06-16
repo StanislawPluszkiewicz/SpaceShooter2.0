@@ -12,6 +12,7 @@
 		private int m_iPlayerRelativePositionsIndex = 0;
 
 		private Animator animator;
+		public Wave wave;
 
 
 		private void Awake()
@@ -52,9 +53,15 @@
 			Shoot(transform.position, -transform.forward);
 		}
 
-		public void Die()
+		public void TakeDamage(int amount)
 		{
-
+			base.TakeDamage(amount);
+			print("foe took " + amount + " damage");
+			if (m_Settings.m_CurrentHealthPoints <= 0)
+			{
+				wave.DestroyFoe(this);
+				Destroy(gameObject);
+			}
 		}
 
 	}

@@ -13,15 +13,19 @@
 
 		private Vector3 m_SpawnPosition;
 
-		public void Spawn()
+		public IEnumerator Spawn()
 		{
 			Transform player = GameManager.Instance.m_Player.transform;
-			print(GameManager.Instance.m_Player);
 			m_SpawnPosition = player.position + player.up * 10 + player.forward * 30;
+			int i = 0;
 			foreach(Foe foePrefab in m_FoePrefabs)
 			{
+				print(i);
 				Foe foe = Instantiate(foePrefab, m_SpawnPosition, Quaternion.identity, transform) as Foe;
 				foe.transform.LookAt(foe.transform.position - player.forward);
+				foe.wave = this;
+				m_Foes.Add(foe);
+				yield return null;
 			}
 		}
 

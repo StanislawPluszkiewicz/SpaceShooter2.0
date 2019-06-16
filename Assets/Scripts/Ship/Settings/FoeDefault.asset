@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FoeDefault
   m_EditorClassIdentifier: 
   m_CurrentHealthPoints: 10
-  m_MaxHealthPoints: 10
+  m_MaxHealthPoints: 20
   m_WeaponPrefabs:
   - {fileID: 7054321415685951879, guid: 1408a1bdb71bee64197d7f33ff314101, type: 3}
   m_ShieldPrefab: {fileID: 0}
