@@ -16,6 +16,8 @@
 		[HideInInspector] public PlatformManager m_SpawnedPlatforms;
 		[HideInInspector] public bool m_SpawnNext = true;
 
+
+
 		public void Start()
 		{
 			m_CurrentLevelIndex = -1;

@@ -115,7 +115,6 @@
 			{
 				movementDirection += -m_Camera.transform.right;
 			}
-			movementDirection += Vector3.forward * m_Settings.m_AutoSpeedForward;
 			movementDirection.Normalize();
 			return movementDirection;
 		}
@@ -124,7 +123,7 @@
 			float hInput = Input.GetAxis("Horizontal");
 			float vInput = Input.GetAxis("Vertical");
 
-			return (Vector3.right * hInput) + (Vector3.forward * (m_Settings.m_AutoSpeedForward + vInput));
+			return (Vector3.right * hInput) + (Vector3.forward *  vInput);
 		}
 
 		#endregion

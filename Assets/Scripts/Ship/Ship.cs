@@ -285,8 +285,8 @@
 
 		protected void Move(Vector3 movementDirection)
 		{
-			transform.Translate(movementDirection * m_Settings.m_MoveSpeed * Time.deltaTime);
-			KeepAboveGround(movementDirection.normalized);
+			transform.Translate((movementDirection * m_Settings.m_MoveSpeed + transform.forward * m_Settings.m_AutoSpeedForward) * Time.deltaTime);
+			KeepAboveGround(movementDirection);
 		}
 		#endregion
 		#region Debug

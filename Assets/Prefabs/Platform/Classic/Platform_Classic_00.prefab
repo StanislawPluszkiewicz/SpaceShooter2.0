@@ -159,7 +159,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eaf032c49f41b5747958740daf887ddd, type: 2}
+  - {fileID: 2100000, guid: 0cc192ab7f73fcd45befe7c501426515, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -297,6 +297,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6136214486996671172}
     m_Modifications:
+    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
+        type: 3}
+      propertyPath: m_Name
+      value: Cylinder_White (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2472365546670094999, guid: 91c434c570517b34ba68c1ef917784c1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -357,16 +367,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.30000013
       objectReference: {fileID: 0}
-    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
-        type: 3}
-      propertyPath: m_Name
-      value: Cylinder_White (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c434c570517b34ba68c1ef917784c1, type: 3}
 --- !u!4 &1294502811468103304 stripped
@@ -382,6 +382,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6136214486996671172}
     m_Modifications:
+    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
+        type: 3}
+      propertyPath: m_Name
+      value: Cylinder_White (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2472365546670094999, guid: 91c434c570517b34ba68c1ef917784c1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -442,16 +452,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.30000013
       objectReference: {fileID: 0}
-    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
-        type: 3}
-      propertyPath: m_Name
-      value: Cylinder_White (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c434c570517b34ba68c1ef917784c1, type: 3}
 --- !u!4 &1933498315826201562 stripped
@@ -467,6 +467,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6136214486996671172}
     m_Modifications:
+    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
+        type: 3}
+      propertyPath: m_Name
+      value: Cylinder_White
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2472365546670094999, guid: 91c434c570517b34ba68c1ef917784c1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -527,16 +537,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.30000013
       objectReference: {fileID: 0}
-    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
-        type: 3}
-      propertyPath: m_Name
-      value: Cylinder_White
-      objectReference: {fileID: 0}
-    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c434c570517b34ba68c1ef917784c1, type: 3}
 --- !u!4 &2219634129748890280 stripped
@@ -552,6 +552,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6136214486996671172}
     m_Modifications:
+    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
+        type: 3}
+      propertyPath: m_Name
+      value: Cylinder_White (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2472365546670094999, guid: 91c434c570517b34ba68c1ef917784c1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -611,16 +621,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30000013
-      objectReference: {fileID: 0}
-    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
-        type: 3}
-      propertyPath: m_Name
-      value: Cylinder_White (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2036403158463337220, guid: 91c434c570517b34ba68c1ef917784c1,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c434c570517b34ba68c1ef917784c1, type: 3}

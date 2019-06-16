@@ -46,7 +46,7 @@
 			Vector2 playerRelativePosition = m_PlayerRelativePositions[m_iPlayerRelativePositionsIndex];
 
 			Vector3 movementDirection = player.m_MovementDirection + Vector3.forward * playerRelativePosition.y + Vector3.right * playerRelativePosition.x;
-			Move(movementDirection.normalized);
+			Move(movementDirection);
 
 			// Shoot
 			Shoot(transform.position, -transform.forward);

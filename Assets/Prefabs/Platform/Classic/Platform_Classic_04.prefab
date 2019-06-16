@@ -159,7 +159,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eaf032c49f41b5747958740daf887ddd, type: 2}
+  - {fileID: 2100000, guid: 0cc192ab7f73fcd45befe7c501426515, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -522,18 +522,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1882593681739005677}
     m_Modifications:
-    - target: {fileID: 1204986859311018, guid: db0a8b155f3602d438312445a21d2274, type: 3}
-      propertyPath: m_Name
-      value: SpherePiece
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204986859311018, guid: db0a8b155f3602d438312445a21d2274, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204986859311018, guid: db0a8b155f3602d438312445a21d2274, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4502859206024582, guid: db0a8b155f3602d438312445a21d2274, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.43
@@ -578,6 +566,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1204986859311018, guid: db0a8b155f3602d438312445a21d2274, type: 3}
+      propertyPath: m_Name
+      value: SpherePiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 1204986859311018, guid: db0a8b155f3602d438312445a21d2274, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1204986859311018, guid: db0a8b155f3602d438312445a21d2274, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db0a8b155f3602d438312445a21d2274, type: 3}
 --- !u!4 &640648139965011547 stripped
@@ -599,18 +599,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1882593681739005677}
     m_Modifications:
-    - target: {fileID: 1343022943336458, guid: 8998ffcb9af8166479c3dc8314c21cdf, type: 3}
-      propertyPath: m_Name
-      value: Stick
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343022943336458, guid: 8998ffcb9af8166479c3dc8314c21cdf, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343022943336458, guid: 8998ffcb9af8166479c3dc8314c21cdf, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4182324849188050, guid: 8998ffcb9af8166479c3dc8314c21cdf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.78
@@ -666,6 +654,18 @@ PrefabInstance:
     - target: {fileID: 4182324849188050, guid: 8998ffcb9af8166479c3dc8314c21cdf, type: 3}
       propertyPath: m_LocalScale.z
       value: 2.0354998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343022943336458, guid: 8998ffcb9af8166479c3dc8314c21cdf, type: 3}
+      propertyPath: m_Name
+      value: Stick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343022943336458, guid: 8998ffcb9af8166479c3dc8314c21cdf, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343022943336458, guid: 8998ffcb9af8166479c3dc8314c21cdf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8998ffcb9af8166479c3dc8314c21cdf, type: 3}
@@ -1007,18 +1007,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1882593681739005677}
     m_Modifications:
-    - target: {fileID: 1562202613974984, guid: cf3880aa2bbaa8d4dab0f4b161d73e03, type: 3}
-      propertyPath: m_Name
-      value: Wall
-      objectReference: {fileID: 0}
-    - target: {fileID: 1562202613974984, guid: cf3880aa2bbaa8d4dab0f4b161d73e03, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1562202613974984, guid: cf3880aa2bbaa8d4dab0f4b161d73e03, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4876038211006112, guid: cf3880aa2bbaa8d4dab0f4b161d73e03, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.72
@@ -1075,6 +1063,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.3342
       objectReference: {fileID: 0}
+    - target: {fileID: 1562202613974984, guid: cf3880aa2bbaa8d4dab0f4b161d73e03, type: 3}
+      propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562202613974984, guid: cf3880aa2bbaa8d4dab0f4b161d73e03, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562202613974984, guid: cf3880aa2bbaa8d4dab0f4b161d73e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 23966451110131068, guid: cf3880aa2bbaa8d4dab0f4b161d73e03,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1101,18 +1101,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1882593681739005677}
     m_Modifications:
-    - target: {fileID: 1975554695092796, guid: 2a0285b565a13284294b603d1f224220, type: 3}
-      propertyPath: m_Name
-      value: Plasma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1975554695092796, guid: 2a0285b565a13284294b603d1f224220, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1975554695092796, guid: 2a0285b565a13284294b603d1f224220, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4796662336426900, guid: 2a0285b565a13284294b603d1f224220, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.17
@@ -1155,6 +1143,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4796662336426900, guid: 2a0285b565a13284294b603d1f224220, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975554695092796, guid: 2a0285b565a13284294b603d1f224220, type: 3}
+      propertyPath: m_Name
+      value: Plasma
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975554695092796, guid: 2a0285b565a13284294b603d1f224220, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975554695092796, guid: 2a0285b565a13284294b603d1f224220, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23074746302364802, guid: 2a0285b565a13284294b603d1f224220,
@@ -1263,18 +1263,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1882593681739005677}
     m_Modifications:
-    - target: {fileID: 1322866401517178, guid: 7e2e9c3818ad6d54aa6c9b1a69db5d7b, type: 3}
-      propertyPath: m_Name
-      value: SpherePiece_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1322866401517178, guid: 7e2e9c3818ad6d54aa6c9b1a69db5d7b, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1322866401517178, guid: 7e2e9c3818ad6d54aa6c9b1a69db5d7b, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4727371711412380, guid: 7e2e9c3818ad6d54aa6c9b1a69db5d7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.48
@@ -1317,6 +1305,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4727371711412380, guid: 7e2e9c3818ad6d54aa6c9b1a69db5d7b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322866401517178, guid: 7e2e9c3818ad6d54aa6c9b1a69db5d7b, type: 3}
+      propertyPath: m_Name
+      value: SpherePiece_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322866401517178, guid: 7e2e9c3818ad6d54aa6c9b1a69db5d7b, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322866401517178, guid: 7e2e9c3818ad6d54aa6c9b1a69db5d7b, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

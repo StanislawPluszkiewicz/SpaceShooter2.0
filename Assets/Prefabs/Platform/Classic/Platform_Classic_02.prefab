@@ -159,7 +159,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eaf032c49f41b5747958740daf887ddd, type: 2}
+  - {fileID: 2100000, guid: 0cc192ab7f73fcd45befe7c501426515, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -726,18 +726,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7006047491406909284}
     m_Modifications:
-    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
-      propertyPath: m_Name
-      value: Jar (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4770037516973160, guid: 2b4161d9af485494398d482f15b13306, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.656
@@ -793,6 +781,18 @@ PrefabInstance:
     - target: {fileID: 4770037516973160, guid: 2b4161d9af485494398d482f15b13306, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
+      propertyPath: m_Name
+      value: Jar (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b4161d9af485494398d482f15b13306, type: 3}
@@ -1437,18 +1437,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7006047491406909284}
     m_Modifications:
-    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
-      propertyPath: m_Name
-      value: Jar
-      objectReference: {fileID: 0}
-    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4770037516973160, guid: 2b4161d9af485494398d482f15b13306, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.656
@@ -1505,6 +1493,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
+      propertyPath: m_Name
+      value: Jar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b4161d9af485494398d482f15b13306, type: 3}
 --- !u!1 &7365194405995192542 stripped
@@ -1526,18 +1526,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7006047491406909284}
     m_Modifications:
-    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
-      propertyPath: m_Name
-      value: Jar (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4770037516973160, guid: 2b4161d9af485494398d482f15b13306, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.656
@@ -1594,6 +1582,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
+      propertyPath: m_Name
+      value: Jar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383902956498550, guid: 2b4161d9af485494398d482f15b13306, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b4161d9af485494398d482f15b13306, type: 3}
 --- !u!1 &8251164151349091307 stripped
@@ -1615,18 +1615,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7006047491406909284}
     m_Modifications:
-    - target: {fileID: 1147745806873152, guid: b86f680f6430e8e40b470093079297ca, type: 3}
-      propertyPath: m_Name
-      value: Debris2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147745806873152, guid: b86f680f6430e8e40b470093079297ca, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147745806873152, guid: b86f680f6430e8e40b470093079297ca, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4326287873869456, guid: b86f680f6430e8e40b470093079297ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.555
@@ -1682,6 +1670,18 @@ PrefabInstance:
     - target: {fileID: 4326287873869456, guid: b86f680f6430e8e40b470093079297ca, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1147745806873152, guid: b86f680f6430e8e40b470093079297ca, type: 3}
+      propertyPath: m_Name
+      value: Debris2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1147745806873152, guid: b86f680f6430e8e40b470093079297ca, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1147745806873152, guid: b86f680f6430e8e40b470093079297ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b86f680f6430e8e40b470093079297ca, type: 3}

@@ -159,7 +159,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eaf032c49f41b5747958740daf887ddd, type: 2}
+  - {fileID: 2100000, guid: 0cc192ab7f73fcd45befe7c501426515, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -370,18 +370,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6179783544912966376}
     m_Modifications:
-    - target: {fileID: 1193121516032082, guid: a347cc969dce4384b81683f6e052cb9f, type: 3}
-      propertyPath: m_Name
-      value: SpacecraftPiece
-      objectReference: {fileID: 0}
-    - target: {fileID: 1193121516032082, guid: a347cc969dce4384b81683f6e052cb9f, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1193121516032082, guid: a347cc969dce4384b81683f6e052cb9f, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4346757837191692, guid: a347cc969dce4384b81683f6e052cb9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.157
@@ -437,6 +425,18 @@ PrefabInstance:
     - target: {fileID: 4346757837191692, guid: a347cc969dce4384b81683f6e052cb9f, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193121516032082, guid: a347cc969dce4384b81683f6e052cb9f, type: 3}
+      propertyPath: m_Name
+      value: SpacecraftPiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193121516032082, guid: a347cc969dce4384b81683f6e052cb9f, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193121516032082, guid: a347cc969dce4384b81683f6e052cb9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a347cc969dce4384b81683f6e052cb9f, type: 3}
@@ -788,18 +788,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6179783544912966376}
     m_Modifications:
-    - target: {fileID: 1995707623785820, guid: 5527f99e9a82d9548a8853673a2116f6, type: 3}
-      propertyPath: m_Name
-      value: Wing2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1995707623785820, guid: 5527f99e9a82d9548a8853673a2116f6, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1995707623785820, guid: 5527f99e9a82d9548a8853673a2116f6, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4801299351686120, guid: 5527f99e9a82d9548a8853673a2116f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -855,6 +843,18 @@ PrefabInstance:
     - target: {fileID: 4801299351686120, guid: 5527f99e9a82d9548a8853673a2116f6, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.17801483
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995707623785820, guid: 5527f99e9a82d9548a8853673a2116f6, type: 3}
+      propertyPath: m_Name
+      value: Wing2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995707623785820, guid: 5527f99e9a82d9548a8853673a2116f6, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995707623785820, guid: 5527f99e9a82d9548a8853673a2116f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5527f99e9a82d9548a8853673a2116f6, type: 3}
