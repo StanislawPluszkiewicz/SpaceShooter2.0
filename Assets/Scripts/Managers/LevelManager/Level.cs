@@ -9,7 +9,6 @@
 	{
 		public List<Platform> m_PlatformTemplates;
 		public List<Wave> m_WaveTemplates;
-		
-
+		[HideInInspector] public bool isActive = false;
 	}
 }

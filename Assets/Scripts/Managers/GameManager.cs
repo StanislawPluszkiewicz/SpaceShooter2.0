@@ -24,7 +24,6 @@
 
 		#region Hierarchy
 		[HideInInspector] public GameObject m_DynamicParent;
-		[HideInInspector] public GameObject m_FoesParent;
 		[HideInInspector] public GameObject m_ProjectilesParent;
 		[HideInInspector] public GameObject m_PlateformesParent;
 		[HideInInspector] public GameObject m_OrbitalsParent;
@@ -142,9 +141,6 @@
 		{
 			m_DynamicParent = new GameObject("Dynamics");
 
-			m_FoesParent = new GameObject("Foes");
-			m_FoesParent.transform.parent = m_DynamicParent.transform;
-
 			m_ProjectilesParent = new GameObject("Projectiles");
 			m_ProjectilesParent.transform.parent = m_DynamicParent.transform;
 
@@ -182,6 +178,12 @@
             LevelManager.Instance.StartLevel(id);
         }
 
+		void StartNextLevel()
+		{
+			LevelManager.Instance.m_CurrentLevelIndex++;
+			StartLevel(LevelManager.Instance.m_CurrentLevelIndex);
+		}
+
 		public void Lose()
 		{
 			Cursor.visible = true;
@@ -189,6 +191,11 @@
             Over();
 		}
 
+		public void EndLevel()
+		{
+			Destroy(m_DynamicParent);
+			ShopManager.Instance.ShowShop();
+		}
         #endregion
 
         #region Callbacks to events issued by Score items

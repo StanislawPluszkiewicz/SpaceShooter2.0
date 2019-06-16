@@ -52,7 +52,10 @@
 			Shoot(transform.position, -transform.forward);
 		}
 
+		public void Die()
+		{
 
+		}
 
 	}
 }

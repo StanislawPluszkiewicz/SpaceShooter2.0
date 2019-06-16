@@ -15,7 +15,7 @@
 		#region Init
 		public static void Init()
 		{
-			GameManager.Instance.m_Player = Instantiate(GameManager.Instance.m_PlayerPrefab, GameManager.Instance.m_PlayerSpawnPosition, Quaternion.identity, GameManager.Instance.m_DynamicParent.transform) as Player;
+			GameManager.Instance.m_Player = Instantiate(GameManager.Instance.m_PlayerPrefab, GameManager.Instance.m_PlayerSpawnPosition, Quaternion.identity) as Player;
 		}
         #endregion
 

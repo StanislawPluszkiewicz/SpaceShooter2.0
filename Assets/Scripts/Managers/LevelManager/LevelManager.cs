@@ -16,9 +16,19 @@
 		[HideInInspector] public PlatformManager m_SpawnedPlatforms;
 		[HideInInspector] public bool m_SpawnNext = true;
 
+		[HideInInspector] public List<Wave> m_Waves;
+
 		public void Start()
 		{
 			m_CurrentLevelIndex = -1;
+		}
+
+		public void DestroyFoe(Foe foe)
+		{
+			foreach(Wave wave in m_Waves)
+			{
+				wave.DestroyFoe(foe);
+			}
 		}
 
 		#region Manager implementation
@@ -48,11 +58,32 @@
 			int index = 0;
 			foreach (Wave wave in m_Levels[m_CurrentLevelIndex].m_WaveTemplates)
 			{
-				wave.Spawn();
-				yield return new WaitForSeconds(wave.m_TimeToClear);
+				Wave instance = Instantiate(wave) as Wave;
+				wave.transform.parent = GameManager.Instance.m_DynamicParent.transform;
+				m_Waves.Add(instance);
+				instance.Spawn();
+				yield return new WaitForSeconds(instance.m_TimeToClear);
 				index++;
 			}
+			StartCoroutine(CheckLevelEnd());
 		}
+
+		private IEnumerator CheckLevelEnd()
+		{
+			while(m_Waves.Count > 0)
+			{
+				foreach(Wave wave in m_Waves)
+				{
+					if (wave.isCleared())
+					{
+						m_Waves.Remove(wave);
+					}
+				}
+				yield return null;
+			}
+			GameManager.Instance.EndLevel();
+		}
+
 		#region Manager stuff
 		public override void SubscribeEvents()
 		{
