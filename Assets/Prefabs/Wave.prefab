@@ -51,3 +51,5 @@ MonoBehaviour:
   - {fileID: 2811304759262536374, guid: f787ddcdbeaeae04b8282e459fe214a5, type: 3}
   - {fileID: 2811304759262536374, guid: f787ddcdbeaeae04b8282e459fe214a5, type: 3}
   - {fileID: 2811304759262536374, guid: f787ddcdbeaeae04b8282e459fe214a5, type: 3}
+  m_Foes: []
+  m_TimeBetweenSpawns: 0.1

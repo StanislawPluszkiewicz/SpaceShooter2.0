@@ -11,7 +11,7 @@ namespace ESIEE_UNITY_ETS
 	{
 
 		[Header("MenuManager")]
-
+		private AudioSource m_AudioSource = null;
 		#region Panels
 		[Header("Panels")]
 		[SerializeField] GameObject m_PanelMainMenu;
@@ -22,8 +22,9 @@ namespace ESIEE_UNITY_ETS
         [SerializeField] GameObject m_PanelConfirmQuit;
 		[SerializeField] GameObject m_Hud;
         [SerializeField] GameObject m_PanelCredits;
+		[SerializeField] GameObject m_PanelShop;
 
-        List<GameObject> m_AllPanels;
+		List<GameObject> m_AllPanels;
 
         private bool isOnMainMenu = false;
 
@@ -81,6 +82,7 @@ namespace ESIEE_UNITY_ETS
 			m_AllPanels.Add(m_PanelConfirmQuit);
 			m_AllPanels.Add(m_Hud);
             m_AllPanels.Add(m_PanelCredits);
+            m_AllPanels.Add(m_PanelShop);
 		}
 
 		void OpenPanel(GameObject panel)
@@ -118,40 +120,66 @@ namespace ESIEE_UNITY_ETS
 
 		#endregion
 
+		public void FixedUpdate()
+		{
+			if (m_AudioSource == null)
+				m_AudioSource = GetComponent<AudioSource>();
+		}
+
 		#region Callbacks to GameManager events
 		protected override void GameMenu(GameMenuEvent e)
 		{
 			OpenPanel(m_PanelMainMenu);
-			GetComponent<AudioSource>().Stop();
-			GetComponent<AudioSource>().PlayOneShot(menuMusic);
+			if (m_AudioSource)
+			{
+				m_AudioSource.Stop();
+				m_AudioSource.PlayOneShot(menuMusic);
+			}
 		}
 
 		protected override void GamePlay(GamePlayEvent e)
 		{
 			OpenPanel(m_Hud);
-			GetComponent<AudioSource>().Stop();
-			GetComponent<AudioSource>().PlayOneShot(level1);
+			if (m_AudioSource)
+			{
+				m_AudioSource.Stop();
+				m_AudioSource.PlayOneShot(level1);
+			}
 		}
 
 		protected override void GamePause(GamePauseEvent e)
 		{
 			OpenPanel(m_PanelInGameMenu);
-			GetComponent<AudioSource>().Stop();
-			GetComponent<AudioSource>().PlayOneShot(menuMusic);
+			if (m_AudioSource)
+			{
+				m_AudioSource.Stop();
+				m_AudioSource.PlayOneShot(menuMusic);
+			}
 		}
 
 		protected override void GameResume(GameResumeEvent e)
 		{
 			OpenPanel(m_Hud);
-			GetComponent<AudioSource>().Stop();
-			GetComponent<AudioSource>().PlayOneShot(level1);
+			if (m_AudioSource)
+			{
+				m_AudioSource.Stop();
+				m_AudioSource.PlayOneShot(level1);
+			}
 		}
 
 		protected override void GameOver(GameOverEvent e)
 		{
 			OpenPanel(m_PanelGameOver);
-			GetComponent<AudioSource>().Stop();
-			GetComponent<AudioSource>().PlayOneShot(menuMusic);
+			if (m_AudioSource)
+			{
+				m_AudioSource.Stop();
+				m_AudioSource.PlayOneShot(menuMusic);
+			}
+		}
+
+		public void GameShop(GameShopEvent e)
+		{
+			OpenPanel(m_PanelShop);
 		}
 		#endregion
 

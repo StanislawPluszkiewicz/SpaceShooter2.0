@@ -19,6 +19,9 @@ public class GameResumeEvent : SDD.Events.Event
 public class GameOverEvent : SDD.Events.Event
 {
 }
+public class GameShopEvent : SDD.Events.Event
+{
+}
 public class GameVictoryEvent : SDD.Events.Event
 {
 }
