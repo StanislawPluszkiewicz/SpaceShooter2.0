@@ -23,6 +23,11 @@ MonoBehaviour:
   - {fileID: 4725594534384110229, guid: b6fc431ef78ad604facb9082c192c200, type: 3}
   - {fileID: 4725594534384110229, guid: 66daa6983ee87404baef1bb254536df2, type: 3}
   - {fileID: 4725594534384110229, guid: 6c7af17a7abe7fb48ac409ce5c470322, type: 3}
-  m_WaveTemplates: []
+  m_WaveTemplates:
+  - {fileID: 2765228828124741464, guid: 60b7b3379e89dcb4cad25f98b34d1bd7, type: 3}
+  - {fileID: 2765228828124741464, guid: 178e5e36f526c50468d4e6d585fdc39f, type: 3}
+  - {fileID: 2765228828124741464, guid: 670f2135bdc02de43aaceec9e381b2ff, type: 3}
+  - {fileID: 2765228828124741464, guid: 2f6603da543834043b3bd33326ea538c, type: 3}
+  - {fileID: 2765228828124741464, guid: cb69ecf1bc2f599459141cd66e68901f, type: 3}
   m_CurrentMaterial: {fileID: 2100000, guid: 2f5f4c139647c7a40a75e70ca1f96f67, type: 2}
-  isActive: 0
+  isActive: 1
