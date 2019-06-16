@@ -1,0 +1,77 @@
+﻿Design:
+/** TO
+    Assets manquants: 
+    - materiaux:
+        plateforme
+        missiles / projectiles
+	-Prefabs d'effet:
+		feu
+		etincelles
+		...
+
+    Lister les vaisseaux à conserver.
+
+    Cosmétique:
+        Système de planètes avec orbites
+        Post-processing
+**/
+
+/** ELLMO
+    HUD  (mettre l'affichage de l'arme 30 min)
+**/
+
+
+Son et musique
+
+
+Gameplay:
+
+    Système de niveaux (si tout est fait : 2h)
+	lvl 1 -> vaisseaux ez
+	shop
+	lvl 2 -> météorites
+	shop
+	lvl 3 -> vaisseaux vener
+	shop
+	lvl 4 -> boss
+
+
+
+    Animations: (a implémenter recup ce que TO a fait - 1h max)
+        Entre niveaux (out there omega °TM)
+
+/** STAN
+    LevelController:
+        Random sur les plateformes (paufiner 30 min)
+        Système de vague (a faire 1h30)
+    Vaisseaux (Ennemis + Joueur):
+        Système Tir (paterne de mouvement des projectiles) (a finir + créer new systèmes + implémenter dmg au joueur et props 3h sans compter les new systèmes +1h pour ionique / laser)
+        Déplacements IA faire une dizaines de déplacements différents (4/5h)
+        PV (30 min max)
+        Défense (shield bleu -> ionique / rouge -> laser) (faire ça https://www.youtube.com/watch?v=NiOGWZXBg4Y&t=10s en visuel. Ajouter collider. 2h)
+    Compétences joueur:
+        Dash (anim + input a faire.  30 min max)
+**/
+
+/** ELLMO UI
+    Shop:
+        Achat Armes
+        Upgrade (temps de recharge des shields + shields max sur soi) / Modifier armure
+        Reparer vaisseau (PV)
+        -> Modifier le vaisseau en fonction de son équipement
+**/
+    
+    Boss' (ennemis avec beaucoup d'éléments):
+        HUD
+        + voir vaisseau
+
+    Element exterieur aux plateformes:
+        Des météorites qui viennent s'écraser sur les plateformes (afficher un indice visuel pour permettre au joueur de l'esquiver, exemple enter the gungeon: spawn nouveua ennemi)
+
+
+Viser système de progression linéaire
+
+Avant le rendu:
+    enlever tous les assets inutiles
+    enlever scenes inutiles
+

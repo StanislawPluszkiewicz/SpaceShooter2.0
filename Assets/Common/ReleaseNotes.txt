@@ -1,0 +1,44 @@
+##################
+#  INSTRUCTIONS  #
+##################
+
+But du jeu : Réussissez à vous enfuir avec votre vaisseau en évitant les débris et les ennemis.
+Controles : ZQSD pour se déplacer.
+Victoire : Atteindre la fin des 3 niveaux.
+Défaite : Votre vaisseau atteint 0 en vie.
+Evénements : Entre chaque niveau, utilisez un magasin pour réparer et améliorer votre vaisseau.
+Capacité : Boucliers Ioniques ou Laser. Il existe 2 types de boucliers Ionique (Bleu) et Laser (Rouge). 
+	   Ces boucliers permettent de protéger des tirs ioniques (bleus) et laser (rouges).
+	   Vous pouvez changer de type de bouclier au magasin.
+
+###################
+#    REMARQUES    #
+###################
+
+
+###################
+#   REPARTITIONS  #
+###################
+
+Théodore :
+
+Stanislaw :
+
+Ellmo :
+	Interfaces + HUD
+	Design des plateformes
+	Boucliers
+
+###################
+#     ASSETS      #
+###################
+
+Assets météorites: Ebal Studio - Gratuit - https://assetstore.unity.com/packages/3d/environments/sci-fi/space-shooter-asteroids-96444
+Assets spaceships: Ebal Studio - Payant - https://assetstore.unity.com/packages/3d/vehicles/space/ultimate-spaceships-creator-81341
+Assets débris spatiaux : Ebal Studio - Gratuit - https://assetstore.unity.com/packages/3d/props/space-debris-and-crates-99699
+
+Assets SciFi UI Pack : Sheffey - Payant - https://assetstore.unity.com/packages/2d/gui/icons/sci-fi-ui-pack-psd-138176
+
+Assets SkyBox : NightSoundGames - Gratuit - https://assetstore.unity.com/packages/2d/textures-materials/sky/starfield-skybox-92717
+
+Sound 
