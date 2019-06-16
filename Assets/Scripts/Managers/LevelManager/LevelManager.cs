@@ -63,30 +63,17 @@
 				instance.transform.parent = GameManager.Instance.m_DynamicParent.transform;
 				m_Waves.Add(instance);
 				StartCoroutine(instance.Spawn());
-				while(!instance.isCleared())
+				print("waiting for wave end");
+				while (!instance.isCleared())
 				{
 					yield return null;
 				}
-			}
-			StartCoroutine(CheckLevelEnd());
-		}
 
-		private IEnumerator CheckLevelEnd()
-		{
-			while (m_Waves.Count > 0)
-			{
-				for(int i = 0; i < m_Waves.Count; ++i)
-				{
-					if (m_Waves[i].isCleared())
-					{
-						m_Waves.Remove(m_Waves[i]);
-						--i;
-					}
-				}
-				yield return null;
+				print("end wave");
 			}
 			GameManager.Instance.EndLevel();
 		}
+
 
 		#region Manager stuff
 		public override void SubscribeEvents()

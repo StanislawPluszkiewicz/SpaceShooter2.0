@@ -876,6 +876,7 @@ PrefabInstance:
       propertyPath: menuMusic
       value: 
       objectReference: {fileID: 8300000, guid: 5750a6ebe73889641ad312bcc13803fa, type: 3}
+    - target: {fileID: 203915320, guid: 2eb004c075b04d3418b146d699e82a5a, type: 3}
       propertyPath: m_PanelShop
       value: 
       objectReference: {fileID: 622298612}
