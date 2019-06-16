@@ -40,11 +40,12 @@
 		#endregion
 		public void StartLevel(int index)
 		{
-			if (gameObject.GetComponent<PlatformManager>() == null)
-			{
-				m_SpawnedPlatforms = gameObject.AddComponent<PlatformManager>();
-			}
 			m_CurrentLevelIndex = index;
+			if (gameObject.GetComponent<PlatformManager>() != null)
+			{
+				Destroy(m_SpawnedPlatforms);
+			}
+			m_SpawnedPlatforms = gameObject.AddComponent<PlatformManager>();
 			m_Levels[m_CurrentLevelIndex].isActive = true;
 			m_SpawnedPlatforms.InitLevel();
 			StartCoroutine(SpawnWaves());
