@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d017570b42a97de439510f6e3f3262d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Settings: {fileID: 11400000, guid: ea38ee1180236a84dafe517c1b869d26, type: 2}
+  m_Settings: {fileID: 11400000, guid: d7d9323e5c5a0804abf1014ce5e477f3, type: 2}
   OnShipSettingsFoldout: 1
   hitPrefab: {fileID: 3039707361048695868, guid: e4ae88bad4676584881bb18959cd2a71,
     type: 3}

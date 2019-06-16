@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9922813060a05a24e80968a2bfeb627a, type: 3}
-  m_Name: DefaultBlue
+  m_Name: RapidRed
   m_EditorClassIdentifier: 
-  m_Damage: 10
-  m_Projectile: {fileID: 3413210527761886852, guid: f5e8f0f49b6d67649a00a0109768cfb3,
+  m_Damage: 1
+  m_Projectile: {fileID: 3413210527761886852, guid: 88c5a2f09558e7e428f17ab1610a297d,
     type: 3}
   m_SpawnTransform: {fileID: 414426425334077824, guid: c9fffc3e6a1904f4dbd4910bf2b1695c,
     type: 3}
-  m_Speed: 10
-  m_Acceleration: 1.2
-  m_MaxSpeed: 30
   m_Random: 0
   type: 0
   m_Straight:

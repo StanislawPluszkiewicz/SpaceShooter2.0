@@ -139,19 +139,22 @@
 
 		private void InitDynamicsHierarchy()
 		{
+			if (m_DynamicParent != null)
+				Destroy(m_DynamicParent);
 			m_DynamicParent = new GameObject("Dynamics");
 
-			m_ProjectilesParent = new GameObject("Projectiles");
-			m_ProjectilesParent.transform.parent = m_DynamicParent.transform;
+			createNewInHierarchy(ref m_ProjectilesParent, "Projectiles");
+			createNewInHierarchy(ref m_PlateformesParent, "Plateformes");
+			createNewInHierarchy(ref m_OrbitalsParent, "Orbitals");
+			createNewInHierarchy(ref m_VFXParent, "VFXs");
+		}
 
-			m_PlateformesParent = new GameObject("Plateformes");
-			m_PlateformesParent.transform.parent = m_DynamicParent.transform;
-
-			m_OrbitalsParent = new GameObject("Orbitals");
-			m_OrbitalsParent.transform.parent = m_DynamicParent.transform;
-
-			m_VFXParent = new GameObject("VFXs");
-			m_VFXParent.transform.parent = m_DynamicParent.transform;
+		private void createNewInHierarchy(ref GameObject obj, string name)
+		{
+			if (obj != null)
+				Destroy(obj);
+			obj = new GameObject(name);
+			obj.transform.parent = m_DynamicParent.transform;
 		}
 		#endregion
 
@@ -160,7 +163,7 @@
 		void InitNewGame(bool raiseStatsEvent = true)
 		{
 			SetScore(0);
-            StartLevel(LevelManager.Instance.m_CurrentLevelIndex + 1);
+            StartLevel(0);
 		}
 
 		void RestartGame(bool raiseStatsEvent = true)
@@ -172,8 +175,8 @@
 		public void StartLevel(int id)
 		{
 			MenuManager.Instance.StartLevel(id);
-			Cursor.visible = false;
 			InitDynamicsHierarchy();
+			Cursor.visible = false;
             Player.Init();
             CameraController.Init();
             LevelManager.Instance.StartLevel(id);
@@ -182,6 +185,10 @@
 		public void StartNextLevel()
 		{
 			LevelManager.Instance.m_CurrentLevelIndex++;
+			if (LevelManager.Instance.m_CurrentLevelIndex == LevelManager.Instance.m_Levels.Count)
+			{
+				print("gg, you won.");
+			}
 			StartLevel(LevelManager.Instance.m_CurrentLevelIndex);
 		}
 
@@ -260,6 +267,7 @@
 
 		private void Pause()
 		{
+			Cursor.visible = true;
 			if (!IsPlaying) return;
 
 			SetTimeScale(0);
@@ -269,6 +277,7 @@
 
 		private void Resume()
 		{
+			Cursor.visible = false;
 			if (IsPlaying) return;
 
 			SetTimeScale(1);
@@ -278,6 +287,12 @@
 
 		private void Over()
 		{
+			if (m_Player != null)
+				Destroy(m_Player);
+			if (m_Camera != null)
+				Destroy(m_Camera);
+			if (m_DynamicParent != null)
+				Destroy(m_DynamicParent);
 			SetTimeScale(0);
 			m_GameState = GameState.gameOver;
 			EventManager.Instance.Raise(new GameOverEvent());

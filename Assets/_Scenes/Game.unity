@@ -237,6 +237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCanvasGame
       objectReference: {fileID: 0}
+    - target: {fileID: 7865255109262191903, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224863145082066246, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -402,6 +407,36 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1666189778}
+    - target: {fileID: 12461951573803385, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 203915320}
+    - target: {fileID: 12461951573803385, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenuButtonHasBeenClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762817460790855669, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 203915320}
+    - target: {fileID: 1762817460790855669, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeButtonHasBeenClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692682964362911967, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 203915320}
+    - target: {fileID: 1692682964362911967, guid: 3b7e54b5d8e3beb4781a4dde5ed83792,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeButtonHasBeenClicked
+      objectReference: {fileID: 0}
     - target: {fileID: 459674789, guid: 3b7e54b5d8e3beb4781a4dde5ed83792, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

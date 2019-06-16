@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d017570b42a97de439510f6e3f3262d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Settings: {fileID: 11400000, guid: ea38ee1180236a84dafe517c1b869d26, type: 2}
+  m_Settings: {fileID: 11400000, guid: e5d04d2da48de9942abee11a5e7080ee, type: 2}
   OnShipSettingsFoldout: 1
   hitPrefab: {fileID: 3039707361048695868, guid: e4ae88bad4676584881bb18959cd2a71,
     type: 3}
@@ -239,15 +239,15 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 1445523681469464, guid: bdee9372940782840935169e1b96fd53, type: 3}
-      propertyPath: m_Layer
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1900891113026582, guid: bdee9372940782840935169e1b96fd53, type: 3}
-      propertyPath: m_Layer
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 1532189435202706, guid: bdee9372940782840935169e1b96fd53, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457482802320616, guid: bdee9372940782840935169e1b96fd53, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445523681469464, guid: bdee9372940782840935169e1b96fd53, type: 3}
       propertyPath: m_Layer
       value: 15
       objectReference: {fileID: 0}
@@ -255,7 +255,7 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 1457482802320616, guid: bdee9372940782840935169e1b96fd53, type: 3}
+    - target: {fileID: 1900891113026582, guid: bdee9372940782840935169e1b96fd53, type: 3}
       propertyPath: m_Layer
       value: 15
       objectReference: {fileID: 0}
