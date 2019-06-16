@@ -183,6 +183,9 @@
 			Quaternion spawnRotation = Quaternion.Euler(0, 0, Random.Range(0, 3) * 90);
             Platform p = Instantiate(platformPrefab, spawnPoint, spawnRotation, GameManager.Instance.m_PlateformesParent.transform) as Platform;
 			p.gameObject.AddComponent<SolarSystem>();
+
+            p.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterials[0] = LevelManager.Instance.m_Levels[LevelManager.Instance.m_CurrentLevelIndex].m_CurrentMaterial;
+
             return p;
         }
         private void OnDestroy()

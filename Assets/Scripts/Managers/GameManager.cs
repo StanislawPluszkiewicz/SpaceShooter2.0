@@ -178,7 +178,7 @@
             LevelManager.Instance.StartLevel(id);
         }
 
-		void StartNextLevel()
+		public void StartNextLevel()
 		{
 			LevelManager.Instance.m_CurrentLevelIndex++;
 			StartLevel(LevelManager.Instance.m_CurrentLevelIndex);
