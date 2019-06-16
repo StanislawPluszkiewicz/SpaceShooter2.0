@@ -8,6 +8,8 @@
     {
 		private CameraController m_Camera;
         private Color m_GizmosColor;
+        public Shield m_Shield;
+
         [HideInInspector] public Vector3 m_MovementDirection;
 
 		[HideInInspector] public int m_iMoney;
@@ -35,6 +37,8 @@
 			{
 				weapon.belongsToPlayer = true;
 			}
+
+            m_Shield = Instantiate(m_Settings.m_ShieldPrefab, Vector3.zero,Quaternion.identity,transform) as Shield;
         }
 
         void Update()
@@ -127,6 +131,17 @@
 		}
 
 		#endregion
+
+        public void HideShield()
+        {
+            m_Shield.enabled = false;
+        }
+
+        public void ShowShield()
+        {
+            m_Shield.enabled = true;
+        }
+
 
 		#region Debug
 		private void OnDrawGizmos()
