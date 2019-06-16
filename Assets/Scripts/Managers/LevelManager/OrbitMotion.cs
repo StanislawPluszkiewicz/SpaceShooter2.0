@@ -44,6 +44,9 @@
 				orbitProgress += Time.deltaTime * orbitSpeed;
 				orbitProgress %= 1f;
 				SetOrbitingObjectPosition();
+				if(gameObject.transform.position.z < GameManager.Instance.m_Player.transform.position.z - 10){
+					Destroy(gameObject);
+				}
 				yield return null;
 			}
 		}

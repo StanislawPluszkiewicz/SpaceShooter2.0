@@ -29,6 +29,12 @@ namespace ESIEE_UNITY_ETS
         private bool isOnMainMenu = false;
 
 		#endregion
+		#region Music
+		public AudioClip menuMusic;
+		public AudioClip level1;
+		public AudioClip level2;
+		public AudioClip level3;
+		#endregion
 
 		#region Events' subscription
 		public override void SubscribeEvents()
@@ -118,26 +124,36 @@ namespace ESIEE_UNITY_ETS
 		protected override void GameMenu(GameMenuEvent e)
 		{
 			OpenPanel(m_PanelMainMenu);
+			GetComponent<AudioSource>().Stop();
+			GetComponent<AudioSource>().PlayOneShot(menuMusic);
 		}
 
 		protected override void GamePlay(GamePlayEvent e)
 		{
 			OpenPanel(m_Hud);
+			GetComponent<AudioSource>().Stop();
+			GetComponent<AudioSource>().PlayOneShot(level1);
 		}
 
 		protected override void GamePause(GamePauseEvent e)
 		{
 			OpenPanel(m_PanelInGameMenu);
+			GetComponent<AudioSource>().Stop();
+			GetComponent<AudioSource>().PlayOneShot(menuMusic);
 		}
 
 		protected override void GameResume(GameResumeEvent e)
 		{
 			OpenPanel(m_Hud);
+			GetComponent<AudioSource>().Stop();
+			GetComponent<AudioSource>().PlayOneShot(level1);
 		}
 
 		protected override void GameOver(GameOverEvent e)
 		{
 			OpenPanel(m_PanelGameOver);
+			GetComponent<AudioSource>().Stop();
+			GetComponent<AudioSource>().PlayOneShot(menuMusic);
 		}
 
 		public void GameShop(GameShopEvent e)
