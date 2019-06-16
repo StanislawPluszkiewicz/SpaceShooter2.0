@@ -171,6 +171,7 @@
 
 		public void StartLevel(int id)
 		{
+			MenuManager.Instance.StartLevel(LevelManager.Instance.m_CurrentLevelIndex);
 			Cursor.visible = false;
 			InitDynamicsHierarchy();
             Player.Init();
@@ -181,7 +182,6 @@
 		public void StartNextLevel()
 		{
 			LevelManager.Instance.m_CurrentLevelIndex++;
-			MenuManager.Instance.StartLevel(LevelManager.Instance.m_CurrentLevelIndex);
 			StartLevel(LevelManager.Instance.m_CurrentLevelIndex);
 		}
 
