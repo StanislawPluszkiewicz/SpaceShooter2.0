@@ -8,11 +8,6 @@
     {
         public ShieldSettings m_Settings;
 
-        public void OnCollisionEnter(Collision collision)
-        {
-            print("Collison with shield");
-        }
-
         public void Hide()
         {
             gameObject.SetActive(false);

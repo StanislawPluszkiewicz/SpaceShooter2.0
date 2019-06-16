@@ -19,30 +19,32 @@
 		{
 			if (GameManager.Instance.m_Player == null)
 				GameManager.Instance.m_Player = Instantiate(GameManager.Instance.m_PlayerPrefab, GameManager.Instance.m_PlayerSpawnPosition, Quaternion.identity) as Player;
+			GameManager.Instance.m_Player.InitPlayer();
 		}
         #endregion
-
-        void Awake()
-		{
-			base.Awake();
-            this.m_iMoney = 0;
-            this.m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer = this.m_Settings.m_ShieldPrefab.m_Settings.m_iTotalLayer;
-        }
 
         void Start()
         {
 			base.Start();
-            m_Camera = FindObjectOfType<CameraController>();
+			InitPlayer();
+		}
 
-			foreach(Weapon weapon in m_Settings.m_WeaponPrefabs)
+		public void InitPlayer()
+		{
+
+			this.m_iMoney = 0;
+			this.m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer = this.m_Settings.m_ShieldPrefab.m_Settings.m_iTotalLayer;
+			m_Camera = FindObjectOfType<CameraController>();
+
+			foreach (Weapon weapon in m_Settings.m_WeaponPrefabs)
 			{
 				weapon.belongsToPlayer = true;
 			}
 
-            m_Shield = Instantiate(m_Settings.m_ShieldPrefab, transform.position ,Quaternion.identity,transform) as Shield;
-        }
+			m_Shield = Instantiate(m_Settings.m_ShieldPrefab, transform.position, Quaternion.identity, transform) as Shield;
+		}
 
-        void Update()
+		void Update()
 		{
 			base.Update();
 			// Movement
