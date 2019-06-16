@@ -402,6 +402,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1666189778}
+    - target: {fileID: 459674789, guid: 3b7e54b5d8e3beb4781a4dde5ed83792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 203915320}
+    - target: {fileID: 1220438417, guid: 3b7e54b5d8e3beb4781a4dde5ed83792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1666189778}
+    - target: {fileID: 1511785440, guid: 3b7e54b5d8e3beb4781a4dde5ed83792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1666189778}
+    - target: {fileID: 1825218799, guid: 3b7e54b5d8e3beb4781a4dde5ed83792, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1666189778}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b7e54b5d8e3beb4781a4dde5ed83792, type: 3}
 --- !u!1 &896702963 stripped
