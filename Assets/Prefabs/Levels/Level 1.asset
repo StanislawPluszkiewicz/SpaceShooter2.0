@@ -19,6 +19,6 @@ MonoBehaviour:
   - {fileID: 4725594534384110229, guid: 87c32c58c48f95846ba067123c5068cd, type: 3}
   - {fileID: 4725594534384110229, guid: 6c7af17a7abe7fb48ac409ce5c470322, type: 3}
   m_WaveTemplates:
-  - {fileID: 2765228828124741464, guid: 490545c9680f3a04190cb5a57abcd461, type: 3}
+  - {fileID: 2765228828124741464, guid: 57b7561c0a7f95740832c0cae9fb0203, type: 3}
   m_CurrentMaterial: {fileID: 2100000, guid: 0cc192ab7f73fcd45befe7c501426515, type: 2}
   isActive: 1

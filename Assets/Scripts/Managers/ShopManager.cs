@@ -35,17 +35,14 @@
         private int m_PriceWeaponRight = 250;
         #endregion
 
-        #region Manager implementation
         protected override IEnumerator InitCoroutine()
         {
-            CheckIfButtonActif();
-            yield break;
+            yield return null;
         }
-        #endregion
 
         #region Update Functions
 
-        private IEnumerator CheckIfButtonActif()
+        private void CheckIfButtonActif()
         {
             if(GameManager.Instance.m_Player.m_Settings.m_CurrentHealthPoints == GameManager.Instance.m_Player.m_Settings.m_MaxHealthPoints)
             {
@@ -64,12 +61,13 @@
             {
                 m_UpgradeShieldButton.enabled = true;
             }
-            yield return null;
         }
 
 
         public void ShowShop()
         {
+            CheckIfButtonActif();
+
             m_PriceUpgradeShieldText.text = m_PriceUpgradeShieldValue.ToString();
             m_PriceChangeTypeShieldText.text = m_PriceChangeTypeShieldValue.ToString();
             m_PriceRepairShipText.text = m_PriceRepairShipValue.ToString();
@@ -82,6 +80,35 @@
 			MenuManager.Instance.GameShop(null); // :c
 		}
 
+        public void BuyChangeShieldType()
+        {
+            GameManager.Instance.m_Player.m_iMoney -= m_PriceChangeTypeShieldValue;
+            if(GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_CurrentType == ShieldSettings.Type.Ion)
+            {
+                GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_CurrentType = ShieldSettings.Type.Laser;
+            }
+            else
+            {
+                GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_CurrentType = ShieldSettings.Type.Ion;
+            }
+        }
+
+        public void BuyAddShield()
+        {
+            if(GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_iTotalLayer < 4)
+            {
+                GameManager.Instance.m_Player.m_iMoney -= m_PriceUpgradeShieldValue;
+                GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_iTotalLayer += 1;
+                GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_iCurrentLayer = GameManager.Instance.m_Player.m_Settings.m_ShieldPrefab.m_Settings.m_iTotalLayer;
+            }
+                
+        }
+
+        public void BuyRepairShip()
+        {
+            GameManager.Instance.m_Player.m_iMoney -= m_PriceRepairShipValue;
+            GameManager.Instance.m_Player.m_Settings.m_CurrentHealthPoints += 10;
+        }
         #endregion
     }
 }

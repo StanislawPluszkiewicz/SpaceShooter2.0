@@ -10,6 +10,7 @@
 		public List<float> m_CooldownsBetweenPositionSwap;
 		private float m_CooldownBetweenPositionsTimeStamp;
 		private int m_iPlayerRelativePositionsIndex = 0;
+        public int m_iReward;
 
 		private Animator animator;
 		[HideInInspector] public Wave wave;
@@ -63,6 +64,7 @@
 			if (m_Settings.m_CurrentHealthPoints <= 0)
 			{
 				wave.DestroyFoe(this);
+                GameManager.Instance.m_Player.m_iMoney += m_iReward;
 				Destroy(gameObject);
 			}
 		}
