@@ -106,7 +106,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7315087123290012419}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.006, y: -0.117, z: 0.405}
+  m_LocalPosition: {x: -0, y: -0.117, z: 0.394}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1819714676020290699}
@@ -159,10 +159,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Settings: {fileID: 11400000, guid: ea38ee1180236a84dafe517c1b869d26, type: 2}
   OnShipSettingsFoldout: 1
+  hitPrefab: {fileID: 3039707361048695868, guid: e4ae88bad4676584881bb18959cd2a71,
+    type: 3}
+  m_Weapons: []
   m_PlatformLayerMask:
     serializedVersion: 2
     m_Bits: 2048
-  m_ShipWidth: 0
+  m_ShipWidth: 0.61
+  m_PlayerRelativePositions:
+  - {x: 0, y: 10}
+  - {x: 5, y: 6}
+  - {x: -5, y: 6}
+  m_CooldownsBetweenPositionSwap:
+  - 3
+  - 2
+  - 2
 --- !u!1001 &8726123713557921037
 PrefabInstance:
   m_ObjectHideFlags: 0

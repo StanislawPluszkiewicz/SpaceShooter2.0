@@ -11,7 +11,6 @@
         [HideInInspector] public Vector3 m_MovementDirection;
 
 		[HideInInspector] public int m_iMoney;
-		public GameObject hitPrefab;
 
 		#region Init
 		public static void Init()
@@ -43,7 +42,7 @@
 			base.Update();
 			// Movement
 			m_MovementDirection = GetMovementDirectionRelativeToPlayer();
-			Move(m_MovementDirection);
+			Move(m_MovementDirection.normalized);
 
 			// Shoot
 			PlayerShoot();

@@ -174,8 +174,9 @@
 		}
 
 		void StartLevel(int id)
-        {
-            InitDynamicsHierarchy();
+		{
+			Cursor.visible = false;
+			InitDynamicsHierarchy();
             Player.Init();
             CameraController.Init();
             LevelManager.Instance.StartLevel(id);
@@ -183,6 +184,7 @@
 
 		public void Lose()
 		{
+			Cursor.visible = true;
 			print("you lost");
             Over();
 		}
@@ -210,7 +212,6 @@
 
 		private void ResumeButtonClicked(ResumeButtonClickedEvent e)
 		{
-			Cursor.visible = false;
 			Resume();
 		}
 

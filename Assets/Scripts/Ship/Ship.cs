@@ -16,6 +16,8 @@
 		[HideInInspector] public bool OnShipSettingsFoldout;
 		#endregion
 
+		public GameObject hitPrefab;
+
 		[HideInInspector] public List<Weapon> m_Weapons;
 
 		protected Transform m_gfx;

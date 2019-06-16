@@ -22,7 +22,7 @@
 		{
 			source = GetComponent<AudioSource>();	
 			m_Type = ProjectileTypeFactory.Create(m_Settings);
-			//Destroy(gameObject,5);
+			Destroy(gameObject,5f);
 		}
 		public void Start(){	
 			var pos = GameManager.Instance.m_Player.transform.position;
@@ -64,7 +64,7 @@
 			if (gameObject.layer == LayerMask.NameToLayer("playerProjectile") && other.gameObject.layer == LayerMask.NameToLayer("foe"))
 			{
 				CollislionHit(pos,rot);
-				GameManager.Instance.m_Player.TakeDamage(this.m_Settings.m_Damage);
+				// GameManager.Instance.m_Player.TakeDamage(this.m_Settings.m_Damage);
 				DestroyImmediate(gameObject);
 			}
 		}
