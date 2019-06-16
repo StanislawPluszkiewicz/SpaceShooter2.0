@@ -57,31 +57,26 @@
 
 		private IEnumerator SpawnWaves()
 		{
-			int index = 0;
 			foreach (Wave wave in m_Levels[m_CurrentLevelIndex].m_WaveTemplates)
 			{
 				Wave instance = Instantiate(wave) as Wave;
 				instance.transform.parent = GameManager.Instance.m_DynamicParent.transform;
 				m_Waves.Add(instance);
 				StartCoroutine(instance.Spawn());
-				print("waiting for " + instance.m_TimeToClear + " seconds");
-				yield return new WaitForSeconds(instance.m_TimeToClear);
-				index++;
+				while(!instance.isCleared())
+				{
+					yield return null;
+				}
 			}
 			StartCoroutine(CheckLevelEnd());
 		}
 
 		private IEnumerator CheckLevelEnd()
 		{
-			//print("checking for level end");
 			while (m_Waves.Count > 0)
 			{
-				//print("waves count:" + m_Waves.Count);
 				for(int i = 0; i < m_Waves.Count; ++i)
 				{
-					//print("i:" + i);
-					//print("wave is cleared" + m_Waves[i].isCleared());
-					//print("foes in wave: " + m_Waves[i].m_Foes.Count);
 					if (m_Waves[i].isCleared())
 					{
 						m_Waves.Remove(m_Waves[i]);

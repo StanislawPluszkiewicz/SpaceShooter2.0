@@ -48,8 +48,6 @@
 
             if (other.gameObject.layer == LayerMask.NameToLayer("shield"))
             {
-                print("In shield");
-
                 Shield s = other.gameObject.GetComponent<Shield>();
                 if (s.m_Settings.m_CurrentType == ShieldSettings.Type.Ion && m_TypeColor == TypeColor.Ion)
                 {
@@ -64,7 +62,6 @@
             }
             else
             {
-                print("NO shield");
                 if (other.gameObject.layer == LayerMask.NameToLayer("undestructibleProps"))
                 {
                     // don't detroy undestructible props

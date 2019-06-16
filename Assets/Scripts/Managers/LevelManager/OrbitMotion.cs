@@ -32,6 +32,12 @@
 			Vector3 orbitPos = orbitPath.Evaluate(orbitProgress);
 			orbitingObject.localPosition = new Vector3(orbitPos.x, orbitPos.y, orbitPos.z);
 		}
+
+		void OnBecameInvisible()
+		{
+			Destroy(gameObject);
+		}
+
 		IEnumerator AnimateOrbit()
 		{
 			if (orbitPeriod < 0.1f)
