@@ -58,6 +58,7 @@ namespace ESIEE_UNITY_ETS
 		{
 			base.Awake();
 			RegisterPanels();
+			m_AudioSource = GetComponent<AudioSource>();
 		}
 
 		private void Update()
